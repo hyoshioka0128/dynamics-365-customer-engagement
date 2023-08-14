@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Create and run online surveys
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > As of **July 1, 2020**, Voice of the Customer surveys are no longer supported in Dynamics 365 Marketing. You can read more about the [discontinuation of Voice of the Customer surveys here](https://cloudblogs.microsoft.com/dynamics365/it/2020/06/16/voice-of-the-customer-surveys-are-not-supported-on-dynamics-365-marketing-starting-july-1-2020/).

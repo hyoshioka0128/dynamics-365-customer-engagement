@@ -8,15 +8,13 @@ ms.custom:
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - developer
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Step 3: Create a workflow or plug-in to implement your custom logic
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 Partners can create a workflow or plug-in to implement their custom logic. For information about creating a workflow or plug-in, see:
 

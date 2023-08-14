@@ -1,23 +1,21 @@
 ---
 title: "Create segments and lists to establish target markets (Dynamics 365 Marketing) | Microsoft Docs"
 description: "Use segments and lists to target customer journeys and manage subscriptions in Dynamics 365 Marketing."
-ms.date: 03/21/2022
+ms.date: 01/17/2023
 ms.custom: 
   - dyn365-marketing
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Working with segments
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 Segments let you create groups of related contacts that you can target with customer journeys. Segments are created using the segment designer. One way to build segments is by querying across related entities including contacts, leads, accounts, events, marketing lists, and more. You can also query the marketing-insights service to find contacts that have engaged with your marketing initiatives. The marketing-insights service also allows you to query contacts that you aren't reaching because of issues such as email bounces.
 
@@ -145,6 +143,26 @@ Almost all types of entities in Dynamics 365 Marketing include a **Related** tab
 
 > [!NOTE]
 > The **Related** tab for segments sometimes includes an entry for **Customer journeys**, but this entry only finds journeys where the current segment is a *suppression segment*. It doesn't find journeys that use the current segment as a target segment. The reason for this is that suppression segments are related directly to the customer journey entity, while target segments are linked to journeys less directly, through a tile configuration, and therefore aren't resolved in the **Related** tab.
+
+## Managing the segment quota
+
+The segment quota is the limit of active segments that an organization can have. The active segment count is the sum of the *live segments* created by users and *system segments* that customer journeys create.
+
+System segments are created when:
+- A unified segment is created (a behavior block plus a profile)
+- A customer journey has condition tile(s)
+- A customer journey uses multiple segments
+
+System segments count as active segments in the quota *if the customer journey is live*.
+
+If the active segments quota is exceeded, you can do the following to reduce the number of active segments:
+- Stop unrelated segment(s)
+- Stop unrelated journey(s)
+
+> [!NOTE]
+> Deleting inactive journeys or segments **will not affect** the usage of active segments.
+
+For more detailed information please visit [Service limits and fair use policy](fair-use-policy.md)
 
 ### See also
 

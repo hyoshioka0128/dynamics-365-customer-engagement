@@ -1,23 +1,21 @@
 ---
 title: "Set up and manage marketing forms for use in marketing pages (Dynamics 365 Marketing) | Microsoft Docs"
 description: "Learn about various types of marketing forms and how to create them in Dynamics 365 Marketing."
-ms.date: 03/31/2022
+ms.date: 12/22/2022
 ms.custom: 
   - dyn365-marketing
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Create, view, and manage marketing forms
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 A marketing form defines a set of input fields arranged into a form layout. You'll probably build a small library of reusable forms that you can place on all your various marketing pages as needed. To add a marketing form to a specific marketing page, use a form element to position the form and choose local settings for it, which apply to that page only.
 
@@ -156,6 +154,7 @@ After you enable allowing form submissions without updating contacts or leads, y
 When a landing page type form is submitted with **Update contact/leads** set to **No update**:
 
 - Contacts and leads are not created or updated, so the **Lead matching strategy** and **Contact matching strategy** setting is not required and has no effect.
+- The form submission is always stored, regardless of the **Store form submission** settings in the summary.
 - The system generates a form-submitted interaction record with the field submission values, but leaves the lead ID null. The contact ID will also be left null unless it is available from previous interactions such as a form submission or email link click.
 - The no update setting only works with landing page form types.
 - While not updating any contact or lead, no update enables selection of form fields of entities other than a contact or lead. This provides users with a rich selection of form fields and allows the possibility to use the option sets under these fields. The no update setting does not map the fields or create any matching strategy, and works as a prototype selection for data collection purposes only.
@@ -252,6 +251,5 @@ Once your form is part of a live marketing page, it will start to collect inform
 [Design your digital content](design-digital-content.md)  
 [Design elements reference](content-blocks-reference.md)  
 [Create input fields for forms](marketing-fields.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

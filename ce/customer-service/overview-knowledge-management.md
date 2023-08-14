@@ -1,18 +1,14 @@
 ---
 title: Overview of knowledge management
 description: Learn about knowledge management in Dynamics 365 Customer Service.
-ms.date: 05/04/2022
+ms.date: 11/07/2022
 ms.topic: article
 author: Soumyasd27
 ms.author: sdas
-manager: shujoshi
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365CS
 ms.custom:
   - dyn365-customerservice
 ---
@@ -38,15 +34,15 @@ Depending on your role in your organization, here’s how you can leverage the f
 ### Create and design knowledge articles
 As a knowledge author, you can:
    - Create rich and well-formatted content for emails or knowledge articles using the new rich text editor. More information: [Use the rich text editor to create knowledge articles and emails](customer-service-hub-user-guide-knowledge-article.md#use-the-rich-text-editor-to-create-knowledge-articles-and-emails)
-   - Review knowledge articles for accuracy before they’re published or made available to others. More information: [Review and reject or approve a knowledge article](customer-service-hub-user-guide-knowledge-article.md#review-and-reject-or-approve-a-knowledge-article).
+   - Review knowledge articles for accuracy before they’re published or made available to others. More information: [Review knowledge articles](review-ka.md#review-knowledge-articles)
    - Use templates to create knowledge articles quickly, with prepopulated fields in the selected template. Templates also help knowledge managers and authors maintain consistency in branding, language, and structure. More information: [Create a knowledge article template](create-templates-knowledge-article.md#create-a-knowledge-article-template)
-   - Set up a default knowledge article authoring language. More information: [Set a default knowledge article authoring language for your organization](set-knowledge-article-authoring-language.md#set-a-default-knowledge-article-authoring-language-for-your-organization)
+   - Set up a default knowledge article authoring language. More information: [Configure a default knowledge article authoring language for your organization](set-knowledge-article-authoring-language.md#configure-a-default-knowledge-article-authoring-language-for-your-organization)
    
 ### Manage the lifecycle of knowledge articles
 As a knowledge author, you can:
-  - Create major and minor versions of a knowledge article, and keep your articles up to date with the latest information while keeping track of changes throughout the lifecycle of your products and services. More information: [Create and manage article versions](customer-service-hub-user-guide-knowledge-article.md#create-and-manage-article-versions)
+  - Create major and minor versions of a knowledge article, and keep your articles up to date with the latest information while keeping track of changes throughout the lifecycle of your products and services. More information: [Create and manage article versions](ka-versions.md#create-and-manage-article-versions)
   - Create a translation for a knowledge article record in multiple languages. More information: [Create a knowledge article translation](work-knowledge-articles.md#create-a-knowledge-article-translation)
-  - Publish articles as soon as they're approved, or schedule them for later publication. You can also set expiration dates on articles. More information: [Schedule or publish an article](customer-service-hub-user-guide-knowledge-article.md#schedule-or-publish-an-article)
+  - Publish articles as soon as they're approved, or schedule them for later publication. You can also set expiration dates on articles. More information: [Publish knowledge articles](publish-ka.md#publish-knowledge-articles)
   
     :::image type="content" source="media/create- knowledge.png" alt-text="Create and manage knowledge articles life cycle":::
 
@@ -54,22 +50,22 @@ As a knowledge author, you can:
 As an administrator, you can create hierarchical, categorical data to help group records. Categories are useful for reporting, sorting, segmenting, and categorization of records. More information: [Create and manage categories](create-manage-categories.md#create-and-manage-categories).
 
 ### Integrate knowledge management with a Power Virtual Agents bot 
-As an administrator, you can integrate a Power Virtual Agents bot with knowledge management to make it easier to use customized conversations in your bot. This helps free up your agents' time so they can focus on complex issues that need human intervention, as the bot helps answer questions, perform actions, and solve issues that are simple in nature. More information: [Integrate knowledge management in Dynamics 365 with Power Virtual Agents bots (preview)](integrate-KM-with-PVA.md#integrate-knowledge-management-in-dynamics-365-with-power-virtual-agents-bots-preview)
+As an administrator, you can integrate a Power Virtual Agents bot with knowledge management to make it easier to use customized conversations in your bot. This helps free up your agents' time so they can focus on complex issues that need human intervention, as the bot helps answer questions, perform actions, and solve issues that are simple in nature. More information: [Integrate knowledge management in Dynamics 365 with Power Virtual Agents bots](integrate-KM-with-PVA.md#integrate-knowledge-management-in-dynamics-365-with-power-virtual-agents-bots)
 
 ## Search knowledge articles
 
 ### Search knowledge articles through different channels
-- As an agent, you can use the knowledge search pane to search articles in Customer Service workspace. More information: [Use the knowledge search pane to search articles](csw-search-knowledge-articles.md#use-the-knowledge-search-pane-to-search-articles)
+- As an agent, you can use either the **Smart assist** or the **Knowledge search pane** to search articles in Customer Service workspace. **Smart assist** provides you with knowledge article suggestions about your case that helps you resolve customer issues quickly. For more information on **Knowledge search pane**, see: [Use the knowledge search pane to search articles](csw-search-knowledge-articles.md#use-the-knowledge-search-pane-to-search-articles)
 - As a customizer, you can set up knowledge base search control on a standard or custom form to help make it easy for users in your organization to find knowledge articles. More information: [Add the Knowledge Base Search control to forms](add-knowledge-base-search-control-forms.md#add-the-knowledge-base-search-control-to-forms)
 - As an administrator, you can configure how you want the knowledge base search control to appear for your entities on the app side pane of Customer Service workspace and Omnichannel for Customer Service. Configuring a record type will specify the information that your agents will see while they interact with customers. More information: [Configure knowledge search control on app side pane for an entity record](configure-knowledge-search-control-productivity-pane.md#configure-knowledge-search-control-on-app-side-pane-for-an-entity-record)
 
 ### Search multiple knowledge providers
-As an administrator, you can use search providers to federate the search of files, documents, or articles from data sources outside of your organization. More information: [Set up a search provider in Customer Service Hub](set-up-search-providers.md#set-up-a-search-provider-in-customer-service-hub)
+As an administrator, you can use search providers to federate the search of files, documents, or articles from data sources outside of your organization. More information: [Set up external search providers](set-up-search-providers.md#set-up-external-search-providers)
 
 ### Set up search logic and search filters
 As an administrator, you can:
   - Set up a knowledge search logic for your knowledge articles to help agents find only the articles they need. More information: [Set up knowledge search logic](set-up-knowledge-management-embedded-knowledge-search.md#set-up-knowledge-search-logic).
-  - Create filters to help your agents more quickly find what they’re looking for. More information: [Enable search filters for knowledge articles](enable-knowledge-article-search-filters.md#enable-search-filters-for-knowledge-articles)
+  - Create filters to help your agents more quickly find what they’re looking for. More information: [Customize search filters for knowledge articles](enable-knowledge-article-search-filters.md)
 
 ## Perform knowledge self-service 
 
@@ -82,7 +78,7 @@ Having a knowledge base on the portal makes it a customer self-service portal, w
 
 As an administrator, you can:
   - Track how many times an article is used, viewed, and sent to customers. Use this information to proactively create knowledge based on search insights across customers and agents. 
-  - Use the knowledge search analytics dashboard to provide supervisors and knowledge workers with valuable insights into how your support agents are finding and using knowledge articles. More information:[Configure Knowledge search insights for Dynamics 365 Customer Service](enable-knowledge-search-insights.md#configure-knowledge-search-insights-for-dynamics-365-customer-service)
+  - Use the knowledge search analytics dashboard to provide supervisors and knowledge workers with valuable insights into how your support agents are finding and using knowledge articles. More information: [Manage Knowledge analytics](enable-knowledge-search-insights.md#manage-knowledge-analytics)
 
     :::image type="content" source="media/knowledge-article-insights-dashboard.png" alt-text="Screenshot of the knowledge search analytics dashboard":::
   

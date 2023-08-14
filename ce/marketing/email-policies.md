@@ -9,17 +9,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Email policies and suspension standards
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 To preserve your reputation as a sender, Dynamics 365 Marketing has developed a deliverability protection system that detects excessive hard bounces, spam reports, block listing, or abuse complaints. This system protects our entire customer base. If email criteria are violated, accounts can be placed under review or terminated. 
 

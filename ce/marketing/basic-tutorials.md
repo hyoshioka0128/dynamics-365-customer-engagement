@@ -5,21 +5,19 @@ ms.date: 04/01/2018
 
 ms.custom: 
   - dyn365-marketing
-  - intro-internal
+ms.collection: get-started
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Core marketing tutorials
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 The tutorials in this section provide exercises that illustrate the core functionality of Dynamics 365 Marketing. If you've never used this product before, this is the best place to start. When you have completed the exercises here, you'll be able to:
 

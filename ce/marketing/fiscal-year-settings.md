@@ -2,24 +2,21 @@
 title: "Manage fiscal year settings (Dynamics 365 Marketing) | Microsoft Docs"
 description: "Define the fiscal year period used for reporting financial data at your organization in Dynamics 365 Marketing."
 ms.date: 03/18/2021
-
 ms.custom: 
   - dyn365-admin
   - dyn365-marketing
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Define fiscal year settings
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 A fiscal period defines the time reflected in financial reports. It is used for reporting financial data in each period.
 

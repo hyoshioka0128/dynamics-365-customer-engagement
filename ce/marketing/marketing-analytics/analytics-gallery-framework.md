@@ -8,18 +8,16 @@ ms.custom:
 ms.topic: article
 author: cabeln
 ms.author: cabeln
-manager: shellyha
 ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # The marketing analytics reporting framework (generic template)
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 
 

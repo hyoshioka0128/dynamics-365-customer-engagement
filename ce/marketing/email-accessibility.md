@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Email accessibility checker
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 The accessibility checker helps you make the content easy for people of all abilities to read. With this feature, you can check the accessibility of emails created using the Marketing content designer and receive guidance on suggested fixes.
 

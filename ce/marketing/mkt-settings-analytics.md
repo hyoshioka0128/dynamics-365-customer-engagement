@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Analytics configurations
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 Use these settings to connect your Dynamics 365 Marketing instance to Azure Blob Storage. This will enable you to share interaction data with external systems such as Power BI. For more information about how to use these settings, see [Create custom analytics with Power BI](custom-analytics.md).
 

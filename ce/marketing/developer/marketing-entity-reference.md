@@ -8,15 +8,13 @@ ms.custom:
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - developer
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Dynamics 365 Marketing entity reference
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 All the entities that are installed as part of the Dynamics 365 Marketing solutions support the [standard extensibility/programming model](../../customerengagement/on-premises/developer/programming-models.md) in Dynamics 365 to perform operations on entities using the **Web API** or **Organization Service**. For example, developers can programmatically create, retrieve, update, and delete (CRUD) entity records provided they have the required privileges to do so.
 

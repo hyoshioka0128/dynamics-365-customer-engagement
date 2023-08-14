@@ -1,23 +1,21 @@
 ---
 title: "Manage image files (Dynamics 365 Marketing) | Microsoft Docs"
 description: "A tutorial for how to manage keywords and upload images to the file library in Dynamics 365 Marketing."
-ms.date: 05/04/2022
+ms.date: 01/20/2022
 ms.custom: 
   - dyn365-marketing
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Manage images for landing pages and email messages
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 In [Create a marketing email and go live](create-marketing-email.md), you saw how to upload an image while adding it to an email message, and you can use similar techniques to add images to your marketing page designs. Another way to make images (and other files) available in Dynamics 365 Marketing is to upload them directly to the file library, which is shared by all users. Your library will typically include brand-identity graphics such as logos, product images, and clip art.
 
@@ -45,7 +43,7 @@ To manage keywords:
 
 To view and edit your image library:
 
-1. Go to **Marketing** > **Marketing content** > **Images**. You now see a list of all existing images and files. Choose any row in the table here to view information about the file and edit its settings (including keywords).
+1. Go to **Marketing** > **Marketing content** > **Library**. You now see a list of all existing images and files. Choose any row in the table here to view information about the file and edit its settings (including keywords).
 
 2. On the command bar, select **New** to upload a new file. The **Upload Files** dialog box opens.
 
@@ -60,11 +58,10 @@ To view and edit your image library:
 
 5. Select **Save** to upload your images to Dynamics 365 Marketing.
 
-6. If you want to edit the display name for an image, go back to **Marketing** > **Marketing content** > **Images**.
+6. If you want to edit the display name for an image, go back to **Marketing** > **Marketing content** > **Library**.
 
 ### See also
 
 [Upload and use images and files](upload-images-files.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

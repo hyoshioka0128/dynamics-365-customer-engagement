@@ -3,9 +3,8 @@ title: "msdyn_sessionparticipant Entity Reference | MicrosoftDocs"
 description: "Includes schema information and supported messages for the msdyn_sessionparticipant entity."
 ms.date: 03/23/2020
 ms.topic: "reference"
-author: "mh-jaya"
-ms.author: v-jmh
-manager: "shujoshi"
+author: "gandhamm"
+ms.author: mgandham
 ---
 # msdyn_sessionparticipant Entity Reference
 
@@ -798,7 +797,7 @@ Each Many-To-One relationship is defined by a corresponding One-To-Many relation
 
 **Added by**: Active Solution Solution
 
-See msdyn_ocsession Entity [msdyn_ocsession_sessionparticipant_nested](msdyn_ocsession.md#BKMK_msdyn_ocsession_sessionparticipant_nested) One-To-Many relationship.
+See msdyn_ocsession Entity msdyn_ocsession_sessionparticipant_nested One-To-Many relationship.
 
 ### See also
 

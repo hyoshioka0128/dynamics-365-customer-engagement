@@ -3,9 +3,8 @@ title: "getTranslationProvider (Omnichannel for Customer Service JavaScript prop
 description: "Includes reference information about getTranslationProvider property in Omnichannel JavaScript API reference."
 ms.date: 04/04/2022
 ms.topic: reference
-author: mh-jaya
-ms.author: v-jmh
-manager: shujoshi
+author: gandhamm
+ms.author: mgandham
 ---
 
 # getTranslationProvider
@@ -32,9 +31,9 @@ interface {
 }
 ```
 
-The `initializeNewConversation` parameter in above interface represents a function which will be called to initialize a conversation. More information: [initializeNewConversation](/dynamics365/omnichannel/developer/reference/methods/initializenewconversation)
+The `initializeNewConversation` parameter in above interface represents a function which will be called to initialize a conversation. More information: [initializeNewConversation](/dynamics365/customer-service/developer/reference/methods/initializeNewConversation)
 
-The `translateMessage` parameter in above interface represents a function which will be called to translate a message. More information: [translateMessage](/dynamics365/omnichannel/developer/reference/methods/translatemessage).
+The `translateMessage` parameter in above interface represents a function which will be called to translate a message. More information: [translateMessage](/dynamics365/customer-service/developer/reference/methods/translateMessage).
 
 A sample of setting the `getTranslationProvider` property is as follows.
 

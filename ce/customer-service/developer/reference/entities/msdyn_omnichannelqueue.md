@@ -3,9 +3,8 @@ title: "msdyn_omnichannelqueue Entity Reference | MicrosoftDocs"
 description: "Includes schema information and supported messages for the msdyn_omnichannelqueue entity."
 ms.date: 08/20/2020
 ms.topic: "reference"
-author: "mh-jaya"
-ms.author: v-jmh
-manager: "shujoshi"
+author: "gandhamm"
+ms.author: mgandham
 applies_to: 
   - "Dynamics 365 (online)"
 ---
@@ -701,7 +700,7 @@ Same as msdyn_liveconversation entity [msdyn_msdyn_omnichannelqueue_msdyn_liveco
 
 ### <a name="BKMK_msdyn_msdyn_omnichannelqueue_msdyn_ocsession_queueid"></a> msdyn_msdyn_omnichannelqueue_msdyn_ocsession_queueid
 
-Same as msdyn_ocsession entity [msdyn_msdyn_omnichannelqueue_msdyn_ocsession_queueid](msdyn_ocsession.md#BKMK_msdyn_msdyn_omnichannelqueue_msdyn_ocsession_queueid) Many-To-One relationship.
+Same as msdyn_ocsession entity msdyn_msdyn_omnichannelqueue_msdyn_ocsession_queueid Many-To-One relationship.
 
 |Property|Value|
 |--------|-----|

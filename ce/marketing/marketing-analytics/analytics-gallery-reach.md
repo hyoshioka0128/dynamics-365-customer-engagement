@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: cabeln
 ms.author: cabeln
-manager: shellyha
 ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 # Marketing reach analysis for Dynamics 365 Marketing
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 Use this report to identify contacts and how you're reaching out to them. See all audiences that have been reached in selected journeys, together with their related interactions.
 

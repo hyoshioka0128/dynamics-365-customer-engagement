@@ -9,17 +9,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Open the administration settings
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 Administrators use settings to fine-tune application behavior, set defaults, manage users, enable webinars, check quotas, and more. If you also use Dynamics 365 Sales, many of the settings you find here also apply to that app, though some settings are unique to Sales or Marketing.
 

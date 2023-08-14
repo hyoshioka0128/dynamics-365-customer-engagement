@@ -8,15 +8,13 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - developer
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Segment Query definition
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 
 Dynamic segments are based on segment query (`msdyncrm_segmentquery`). You can define a segment query by combing groups of logical expressions, each of which results in a set of `contacts`. Each group establishes a path through one or more entities that ends at the `Contact` entity (the order matters).
@@ -210,7 +208,8 @@ Grammar definition describes how you can use the query language.
 |filterFunction|FILTER(propertyCondition)| 
 |propertyCondition| comparisonCondition or notFunction or logicalCondition or stringComparisonCondition or nullFunction| 
 |comparisonCondition|  valueExpression comparisonOperator valueExpression (valueExpression comparisonOperator valueExpression)|
-|valueExpression |booleanValue or string  or number or aliasedIdentifier or dateDiffFunction or dateAddFunction or dateFunction or dateTimeUtcNowFunction or arithmeticOperation| |booleanValue | True or False| 
+|valueExpression |booleanValue or string  or number or aliasedIdentifier or dateDiffFunction or dateAddFunction or dateFunction or dateTimeUtcNowFunction or arithmeticOperation| 
+|booleanValue | True or False| 
 |aliasedIdentifier| identifier or identifier.identifier| 
 |dateDiffFunction| DATEDIFF(datePart,valueExpression,valueExpression)| 
 |datePart |YEAR MONTH  DAY  HOUR  MINUTE SECOND  MILLISECOND |

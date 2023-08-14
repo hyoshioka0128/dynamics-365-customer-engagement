@@ -8,15 +8,13 @@ ms.custom:
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - developer
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Step 2: Configure the custom channel tile
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 A custom channel is exposed as a “tile” in the customer journey designer. You can define the tile using an XML file.
 

@@ -1,13 +1,12 @@
 ---
-title: "Display custom context | MicrosoftDocs"
+title: "Display custom context in Conversation summary| MicrosoftDocs"
 description: "Use this topic to understand how to display custom context in the Conversation summary section of conversations."
 ms.date: 10/21/2021
 ms.topic: reference
 author: lalexms
 ms.author: laalexan
-manager: shujoshi
 ---
-# Display custom context
+# Display custom context in Conversation summary
 
 [!INCLUDE[cc-use-with-omnichannel](../includes/cc-use-with-omnichannel.md)]
 
@@ -33,7 +32,7 @@ The data type of the context variables is a JSON object with two properties&mdas
 
 The input value for `isDisplayable` is **Boolean** (true or false). The input value for `Value` can be **Boolean**, **String**, or **Number**.
 
-To display the context variables in the [Conversation Summary Control of conversations](oc-customer-summary.md#conversation-summary) for Power Virtual Agents and Azure bots, use the `isDisplayable` property in the body of [setContextProvider](developer/reference/methods/setContextProvider.md) method.
+To display the context variables in the [Conversation Summary Control of conversations](oc-customer-summary.md#view-conversation-summary) for Power Virtual Agents and Azure bots, use the `isDisplayable` property in the body of [setContextProvider](developer/reference/methods/setContextProvider.md) method.
 
 Here's an example:
 `{\"isDisplayable\":\"true\"," +"\"Value\":\"context variable value as string\"}`

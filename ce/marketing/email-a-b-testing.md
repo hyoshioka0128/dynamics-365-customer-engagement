@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Design and run A/B tests on your email designs
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 Use email A/B testing to find out which of two similar designs is likely to be the most successful and then send the winning design to the remaining audience automatically. You start by creating a control design (the "A" version), and then using that as the basis to create a "B" version of the design in which you have modified a small part of it (such as the subject or an image). Finally, run the test as part of a customer journey.
 

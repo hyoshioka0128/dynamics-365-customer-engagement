@@ -3,9 +3,8 @@ title: "setContextProvider (Omnichannel for Customer Service JavaScript API refe
 description: "Includes reference information such as syntax and parameters for the setContextProvider method in Omnichannel for Customer Service JavaScript API reference. Also included is a sample code for using the method."
 ms.date: 01/21/2022
 ms.topic: reference
-author: mh-jaya
-ms.author: v-jmh
-manager: shujoshi
+author: gandhamm
+ms.author: mgandham
 ---
 # setContextProvider 
 
@@ -56,7 +55,7 @@ The `isDisplayable` attribute, if set to `true`, will display the passed items i
 
 > [!NOTE]
 >
-> If no context variables have been created under live workstream with a matching logical name, then the variables are created at runtime with the type String. More information: [Context variables](../../../context-variables-for-bot.md#add-context-variables)
+> If no context variables have been created under live workstream with a matching logical name, then the variables are created at runtime with the type String. More information: [Context variables](../../../manage-context-variables.md#add-context-variables)
 
 ![Display context keys.](../../../media/context-variable-display.png "Display context keys")
 

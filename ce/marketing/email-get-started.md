@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Get started with email
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 This article provides a checklist to get email in Dynamics 365 Marketing up and running quickly.
 
@@ -39,3 +37,5 @@ Follow these steps to set up subscription lists, configure your subscription cen
 | Embed forms and subscription center into CMS (if Power Apps portals are not used) | Learn more: [Embed forms on external websites](embed-forms.md). |
 | Design a customer journey for subscription mailings | This will be a simple two or three step journey (send mail to subscribers). Learn more: [Create a simple customer journey with email messaging](create-simple-customer-journey.md). |
 | Test and go live with marketing mailings | Learn more: [Check for errors, go live, and deliver the messages](email-check-golive.md). |
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

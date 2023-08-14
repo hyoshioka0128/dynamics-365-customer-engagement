@@ -3,7 +3,6 @@ title: "Voice channel in Omnichannel for Customer Service | MicrosoftDocs"
 description: "Get an overview of the voice channel and its offerings in Omnichannel for Customer Service."
 author: neeranelli
 ms.author: nenellim
-manager: shujoshi
 ms.date: 04/26/2022
 ms.topic: overview
 ---
@@ -53,12 +52,11 @@ Take a look at some of the key capabilities that makes the voice channel great f
 ### See also
 
 [Install the voice channel](voice-channel-install.md)  
-[Regional availability of the voice channel](voice-channel-region-availability.md)  
+[Supported cloud locations, languages, and locale codes ](voice-channel-region-availability.md)  
 [International availability of Omnichannel for Customer Service](international-availability.md)  
 [System requirements](system-requirements-omnichannel.md)  
 [Provision Omnichannel for Customer Service](omnichannel-provision-license.md)  
-[FAQs about the voice channel in Omnichannel for Customer Service](voice-channel-faqs.md)  
-
+[FAQ about the voice channel in Omnichannel for Customer Service](voice-channel-faqs.md)  
 [Blog: New voice channel streamlines omnichannel customer experiences](https://cloudblogs.microsoft.com/dynamics365/bdm/2020/09/23/new-voice-channel-streamlines-omnichannel-customer-experiences/)  
 
 

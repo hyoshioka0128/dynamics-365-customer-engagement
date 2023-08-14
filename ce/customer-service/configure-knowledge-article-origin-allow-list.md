@@ -5,12 +5,8 @@ ms.date: 04/04/2022
 ms.topic: article
 author: Soumyasd27
 ms.author: sdas
-manager: shujoshi
 search.audienceType: 
   - admin
-search.app: 
-  - D365CE
-  - D365CS
 ms.custom: 
   - dyn365-customerservice
 searchScope: 
@@ -63,7 +59,7 @@ To remove a domain, select **Close** next to the domain name.
 ### See also
 
 [Create and manage knowledge articles](customer-service-hub-user-guide-knowledge-article.md#create-and-manage-knowledge-articles)  
-[Search for knowledge articles in the Customer Service Hub](search-knowledge-articles-csh.md#search-for-knowledge-articles-in-the-customer-service-hub)  
+[Search knowledge articles](search-knowledge-articles-csh.md#search-knowledge-articles) 
 [Search the knowledge base on portals](knowledge-base-search-methods.md#search-the-knowledge-base-on-portals).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

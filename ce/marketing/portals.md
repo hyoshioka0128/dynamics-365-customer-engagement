@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Create interactive features with or without portals
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Marketing provides features for creating landing pages, subscription centers, online forms, event websites, and other ways of interacting with your customers online. Each of these features is intended to be used by marketing contacts to view and submit information to and from the Marketing app. There are two ways to provide these interactive features:
 

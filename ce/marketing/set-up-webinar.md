@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Set up a webinar
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 A *webinar* (short for "web seminar") is a live event that one or more people can watch simultaneously online. You can set up any session or event to function as a webinar. An event or session can be webinar-only (where live attendance is not possible) or a simulcast for attendees who can't make it to the venue to attend a live event. You can also set an event or session as onsite only, which will disable webinars for that item and hide its webinar settings.
 
@@ -49,7 +47,7 @@ To configure an event or session for broadcast as a webinar:
 4. Allow the event or session to save itself (which usually occurs every few seconds), or select **Save** in the lower-right corner of the window to save it immediately. As soon as you've saved an event with a valid webinar configuration, Dynamics 365 Marketing will create the webinar in your webinar provider's system, which will return the following values:
 
    - **Webinar URL**: A link to the webinar at the webinar provider. Dynamics 365 Marketing uses this link to synchronize registrations and metrics between the two systems.
-   - **Presentation Manager URL**: A link that the presenter can use to control his or her presentation.
+   - **Presentation Manager URL**: A link that the presenter can use to control their presentation.
 
 ## Send the webinar URL to attendees
 

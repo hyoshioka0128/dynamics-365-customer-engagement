@@ -1,23 +1,21 @@
 ---
 title: "Create custom triggers in real-time marketing (Dynamics 365 Marketing) | Microsoft Docs"
 description: "Learn about creating real-time marketing custom triggers in Dynamics 365 Marketing."
-ms.date: 03/21/2022
+ms.date: 06/29/2022
 ms.custom: 
   - dyn365-marketing
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Create custom triggers in real-time marketing
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 Custom triggers are a flexible way to capture important moments and interactions, allowing you to orchestrate uniquely engaging customer interactions.
 
@@ -43,7 +41,7 @@ This step is performed in the **Triggers** section of real-time marketing. To cr
 
 - **Special Attributes**
   
-    **Customer data** is a special attribute present by default in every custom trigger. This attribute contains information about the customer that performs the trigger action. The data type can either be a Dynamics 365 contact or lead, or a [Customer Insights profile](/customer-insights/audience-insights/overview). In code, this attribute is referred to as *authID*.
+    **Customer data** is a special attribute present by default in every custom trigger. This attribute contains information about the customer that performs the trigger action. The data type can either be a Dynamics 365 contact or lead, or a [Customer Insights profile](/dynamics365/customer-insights/customer-profiles). In code, this attribute is referred to as *authID*.
 
     **contactpoint_email** is a special attribute that is present in a custom trigger that is tied to a Customer Insights profile. This attribute will be used as a fall back in case the full Customer Insights profile isn't available. Developers should include the customer's email in this attribute to ensure the customer can be reached by email even if their full profile information isn't available.
 
@@ -71,3 +69,8 @@ The code snippet contains instructions detailing how to integrate the trigger co
 ## 3. Finalize the trigger
 
 Once the integration has been completed, the **Triggers** page will show information to confirm that the custom trigger is working as expected. With the integration complete and verified, the trigger will be marked as **Ready to use**, which will make the trigger visible and available in journeys.
+
+> [!TIP]
+> When you're looking at the list of triggers, custom triggers have a plain lightning bolt icon ![Custom trigger icon.](media/real-time-marketing-custom.png "Custom trigger icon"). Out-of-the-box triggers have a lightning bolt with a suitcase icon ![Out-of-the-box trigger icon.](media/real-time-marketing-oob.png "Out-of-the-box trigger icon").
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

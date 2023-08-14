@@ -1,41 +1,25 @@
 ---
-title: "Preview: Work with reusable content blocks (Dynamics 365 Marketing) | Microsoft Docs"
-description: "How to create reusable content blocks and use them in your email designs in Dynamics 365 Marketing."
-ms.date: 05/06/2022
+title: Work with reusable content blocks
+description: How to create reusable content blocks and use them in your email designs in Dynamics 365 Marketing.
+ms.date: 04/07/2023
 ms.custom: 
   - dyn365-marketing
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
-# Preview: Create content blocks that you can reuse in multiple designs
+# Create content blocks that you can reuse in multiple designs
 
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
-## How to enable the content blocks preview
+Content blocks are pre-made pieces of content that you can insert into emails. They can contain text, images, links, buttons, and more – anything that can be used as content in an email. They also can include formatting and layout. When inserted, all of the content (including the layout, if present) contained within the content block becomes part of the email.
 
-This article refers to a feature that is in preview and may not be enabled in your environment. If you don’t see this feature in your app, contact your admin who can activate it by going to **Settings** > **Other settings** > **Feature switches** > **Personalization** and enabling the **New canvas experience and Content blocks** feature switch. This will also enable the new canvas experience that is required for content blocks (see [Create a marketing email](create-marketing-email.md) for details on the new canvas experience).
-
-> [!div class="mx-imgBorder"]
-> ![Content blocks feature switch.](media/content-blocks-feature-switch.png "Content blocks feature switch")
-
-## What are content blocks?
-
-Content blocks are premade pieces of content that you can insert into emails. They can contain text, images, links, buttons, and more – anything that can be used as content in an email. They also can include formatting and layout. When inserted, all of the content (including the layout, if present) contained within the content block becomes part of the email.
-
-### Types of content blocks
+## Types of content blocks
 
 There are two types of content blocks:
 
@@ -100,6 +84,13 @@ A content block can be edited while it is in a *Draft* state. If it is in a *Liv
 
 > [!IMPORTANT]
 > Updating a content block does not update any emails that are using that content block. Each time a content block is inserted into an email, that email gets a copy of the content block that is no longer connected or associated with the original content block.
+
+> [!IMPORTANT]
+> When a content block is updated (from **Assets** > **Content blocks**), check the **Settings** pane. It will show all emails and templates that use the content block to alert you which emails and templates will need to be updated.
+>
+> [!div class="mx-imgBorder"]
+> ![Content block update screenshot.](media/content-block-update.png "Content block update screenshot")
+
 
 ## Protecting content from changes
 

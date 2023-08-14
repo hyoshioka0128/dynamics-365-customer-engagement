@@ -1,388 +1,241 @@
 ---
-title: Search knowledge articles in the Customer Service Hub in Dynamics 365 Customer Service | Microsoft Docs
-description: See how you can effectively search knowledge articles in the Customer Service Hub.
-ms.date: 04/04/2022
-ms.topic: article
+title: Search knowledge articles
+description: Learn how to search for and view knowledge articles in Dynamics 365 Customer Service.
 author: Soumyasd27
 ms.author: sdas
-manager: shujoshi
+ms.reviewer: shujoshi
+ms.topic: how-to
+ms.date: 07/21/2023
+ms.custom: 
+  - dyn365-customerservice
+  - bap-template
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365CS
-ms.custom: 
-  - dyn365-customerservice
 ---
 
-# Search for knowledge articles in the Customer Service Hub
+# Search knowledge articles
 
-Knowledge base search in the Customer Service Hub app lets you search for relevant knowledge articles to resolve a case. To search for knowledge articles in a case form, select the **Knowledge Base Search** search box in the **Knowledge Base Search control** of the **Related** section.
+Search and view knowledge articles to help answer a customer's question or solve an issue.
 
-The search results are automatically populated based on a field your administrator configured in the **Knowledge Base Search** control properties. Out of the box, for a case, this is the title of the case record.
+Knowledge base search is available in Customer Service Hub, Customer Service workspace, Omnichannel for Customer Service, and some versions of [Dynamics 365 Customer Engagement (on-premises)](/dynamics365/customerengagement/on-premises/whats-new#agent-productivity-enhancements-to-knowledge-capabilities). Customers can search your knowledge base on their own if your organization has provided a [self-service portal](knowledge-base-search-methods.md).
 
-For more information, see [Knowledge Base Search control](#knowledge-base-search-control).
+## Prerequisites
 
-## Knowledge base search control powered by Dataverse search
+- Your administrator has [turned on Dataverse search](/power-platform/admin/configure-relevance-search-organization).
 
-Knowledge base search in the Customer Service Hub comes with improved search functionality. The knowledge base search is enabled to use Dataverse search in the knowledge base search control area, in addition to the global search area where Dataverse search is already enabled.
+- Your administrator has set up the following columns in the **Quick Find View** by navigating to **Tables** > **Knowledge Article** > **Views** > **Quick Find Active Knowledge Articles**:
 
-[!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Configure Dataverse search](/power-platform/admin/configure-relevance-search-organization)
+  - Article Public Number
+  - Content  
+        The **Content** field is hidden in the user interface to avoid unintentional deletion of content.
+  - Created On
+  - Keywords
+  - Knowledge Article Views
+  - Language
+  - Major Version Number
+  - Minor Version Number
+  - Modified On
+  - Rating
+  - Status
+  - Title
 
-Dataverse search uses Azure search service to index and search records. Dataverse search provides improved search functionality, like better relevance, highlighted search keyword text, and the ability to search within attachments and notes. With Dataverse search, you can also configure searchable fields in the knowledge article entity. 
+- You have access to knowledge article entities, such as Knowledge Article, Knowledge Article Views, Knowledge Article Attachment, Favorite Knowledge Article, and Knowledge Article Image.
 
-[!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Configure searchable fields for Dataverse Search](/power-platform/admin/configure-relevance-search-organization)
+- Your administrator has granted **Create**, **Read**, **Write**, **Delete**, **Append**, and **Appendto** privileges to any new custom roles you created.
 
+- In Customer Service workspace and Omnichannel for Customer Service, your administrator has turned on the app side pane and knowledge search in agent experience profiles.
 
-> [!NOTE]
-> To enable Dataverse search for the knowledge article entity, see [Enable Dataverse Search](/power-platform/admin/configure-relevance-search-organization) and [Select entities for Dataverse Search](/power-platform/admin/configure-relevance-search-organization).</br>
-If Dataverse search is not enabled for the entity, standard full-text search is used. 
+- You're dealing with a case or a conversation, or your administrator has [turned on the ability](set-up-knowledge-management-embedded-knowledge-search.md#configure-knowledge-management) to open the knowledge pane for other entities.
 
-For more information, see [Understand knowledge base search mechanisms](knowledge-base-search-methods.md).
+## Tips for search results
 
+If a keyword you enter matches content in the knowledge base, the matching words are highlighted in yellow in the search results. Matches don't necessarily appear in the first three lines or words of an article, so you might not see the highlighted text in the search results.
 
-### Before you begin using Dataverse search
+If style tags are visible in an article's content summary, it means that style tags were used to format the article. Consider offering feedback to the article's author to use inline CSS styling instead.
 
-Dataverse search uses the scoring concepts as defined by Azure search. To be able to search the knowledge base using Dataverse search, certain view columns must be configured in the Quick Find view columns list. If any of these columns are deleted or missing, the search query displays an error.
+## Search the knowledge base directly in Customer Service Hub
 
-> [!NOTE]
-> An admin can configure the knowledge article quick find view columns list by navigating to **Settings > Customizations > Entities > Knowledge Article > Views > Quick Find View > View Columns**.
+You can search the knowledge base directly, without viewing a case or conversation first, in Customer Service Hub.
 
-The following are required view columns:
+1. In Customer Service Hub, under **Knowledge**, select **Knowledge Search**.
+1. Enter a keyword in the search box.
 
-- Article Public Number
-- Content
-- Created On 
-- Keywords
-- Knowledge Article Views 
-- Language
-- Major Version Number 
-- Minor Version Number
-- Modified On
-- Rating
-- Status
-- Title
+:::image type="content" source="media/search-kb-article.png" alt-text="Screenshot that shows a direct search for a knowledge article in Knowledge Search in Customer Service Hub.":::
 
-## Knowledge Base Search control
+Legend:
+1. The search box
+1. Status and visibility tags
+1. The number of attachments, likes, and views, and the date the article was most recently updated
+1. The article ID
+1. A card that displays search term matches from keywords, description, attachments, and other custom fields
+1. An attachment that includes the search term in its title or contents
 
-Customer Service Hub comes with an enhanced Knowledge Base Search that shows you articles arranged in a single stream. Searching, sorting, and filtering the articles in the search control is faster and more responsive, with improvements to article viewability and usability. The Knowledge Base Search capability is also available in Dynamics 365 Customer Engagement (on-premises) 9.1. More information: [New features in Dynamics 365 Customer Engagement (on-premises)](../customerengagement/on-premises/whats-new.md#agent-productivity-enhancements-to-knowledge-capabilities)
+If your administrator hasn't turned on Dataverse search, the system uses the keywords you enter to perform a full-text search of the following knowledge article metadata: **Title**, **Content**, **Keywords**, **Description**, and **Article Public Number**. If Dataverse search is turned on, your administrator can [select the columns that are searched](/power-platform/admin/configure-relevance-search-organization).
 
-When you select the **Knowledge Base Search** option in the **RELATED** section, the **Knowledge Base Search** control loads, and you can view the following:
+## Search for related articles in Customer Service Hub
 
-  > [!div class=mx-imgBorder]
-  > ![Knowledge-article-search.](media/knowledge-base-search-details.png "View the features in knowledge base search")
+You can search the knowledge base for related articles when you view a case or conversation in Customer Service Hub.
 
-  1. Knowledge Base Search
-  2. Open filter pane
-  3. Sort search results by
-  4. Search knowledge articles
-  5. Link this article to the current record (unlink will be displayed when the article is already linked to a record)
-  6. Copy
-  7. Displays Pop out and Email Content 
-  8. Link this article to a record and send via email
-  9. Rating
-  10. Unlink an article that is currently linked to a case
-  11. Number of views the article has received
-  12. Article date
-  13. Confirmation that the record is linked to a case
-  14. Status and visibility tags for the article
+1. In Customer Service Hub, open a case or conversation.
 
-> [!NOTE]
-> If the keyword you used matches, the matches are highlighted in yellow, but won't necessarily show up in the first three lines, so you might not see the highlighted text in search results.
+1. In the reference pane to the right of the timeline, select the **Knowledge search** (book) icon.
 
-In the knowledge base search control, you can do the following:
-- Search for knowledge articles
-- Filter articles using multiple filter options
-- Sort knowledge articles
-- Link and unlink a knowledge article to a record
-- Email a knowledge article
-- View the knowledge article inline in the search control
+1. The case title is used as the search term by default, but you can enter your own keywords to get more relevant results.
 
+    :::image type="content" source="media/knowledge-search-csh.png" alt-text="Screenshot of knowledge search in the reference pane.":::
 
-### Display knowledge article pop outs 
+Legend:
 
-1. In the top-right corner, select the ellipsis (...).
-2. A pop-out option is displayed.
-3. Select **Pop out**.
-4. The article opens in an expanded form in a new window.
+1. Filters the list of results
+1. Sorts the list of results
+1. Search box
+1. Unlinks the article from the current case or conversation
+1. Opens the article in a new browser window
+    To view the article in the reference pane, select its title in the search results.
+1. Opens a new email so that you can send the article to your customer
+1. Rating
+1. The number of times the article has been viewed
+1. Links the article to the current case or conversation
+1. Status and visibility tags for the article
+1. Confirmation that the record is linked to a case
+1. A card that displays search term matches from keywords, description, attachments, and other custom fields
+1. The date the article was most recently updated
+1. The article ID
 
-  > [!div class=mx-imgBorder]
-  > ![Pop out.](media/knowledge-base-search-popout.png "Pop out the article in a new window")
+## Search for related articles in Customer Service workspace and Omnichannel for Customer Service
 
-### Search for knowledge articles
+You can search the knowledge base for related articles in the app side pane when you view a case or conversation in Customer Service workspace and Omnichannel for Customer Service. By default, a successful search displays up to 10 results.
 
-Type a keyword in the search field to search for knowledge articles.
+1. In Customer Service workspace or Omnichannel for Customer Service, open a case or conversation.
 
- :::image type="content" source="media/search-kb-article.png" alt-text="Search for knowledge article":::
+2. In the app side pane, select the **Knowledge search** (book) icon.
 
-  |Label|Description|
-  |-----|-----------|
-  |1.| The Knowledge search field.|
-  |2.| Status and visibility tags for the article.|
-  |3.| The number of times the article has been viewed. |
-  |4.| Article number.|
-  |5.| Info card that displays search term matches from keywords, description, attachments, and any other custom fields.|
-  |6.| Search results across attachments. The attachment title is displayed only when the search term matches the content in the attachment.|
+3. The case title is used as the search term by default, but you can enter your own keywords to get more relevant results.
 
-- If Dataverse search is not enabled, the keywords that you enter will initiate a search (using the Full-text search mechanism) in the following fields of a knowledge article: **Title**, **Content**, **Keywords**, **Description**, and **Article Public Number**.
+    :::image type="content" source="media/csw-knowledge-tab.png" alt-text="Screenshot of knowledge search in the app side pane.":::
 
-  > [!NOTE]
-  > If there's a style tag with CSS styles at the top of the article, the summary of the content in the knowledge search results list will contain style tags. Use inline CSS styling instead of putting styles in style tags.
+Legend:
 
-- If Dataverse search is enabled, you can configure the fields based that you want to be searched for. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Configure searchable fields for Dataverse Search](/power-platform/admin/configure-relevance-search-organization) 
+1. **Knowledge Search** icon
+1. The tag that indicates the article is linked to the case or conversation
+1. The article ID
+1. The number of times the article has been viewed
+1. A card that displays search term matches from keywords, description, attachments, and other custom fields
+1. Links the article to the current case or conversation, or, if the article is already linked, unlinks it
+1. Status and visibility tags for the article
+1. An attachment that includes the search term in its title or contents
 
-[!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add the Knowledge Base Search control to Main forms](add-knowledge-base-search-control-forms.md#add-the-knowledge-base-search-control-to-main-forms)
+Select **More options** (**&hellip;**) to:
 
-## Linked knowledge articles subgrid
+- Select **Email Content** to open a new email so that you can send the article to your customer.
+- Select **Send URL** to paste the article link in the conversation window in channels other than Voice in Omnichannel for Customer Service.
 
-The linked knowledge article subgrid is available for an entity, such as a case or account, only if your system administrator has added the subgrid to the entity form. The knowledge article subgrid displays the knowledge articles that have been linked with the entity. Some of the options available are as follows:
+You can perform these actions only on published or expired articles.
 
-- Add a knowledge article
-- Select and edit an article's content
-- Sort
-- Bulk operations
- 
-You can also edit a knowledge article by double-clicking it in the linked articles list.
+## See suggested articles during a conversation in Customer Service workspace and Omnichannel for Customer Service
 
-To link the knowledge article to an entity, you need to do the following steps. For the sake of this example, let us consider the entity as Accounts.
+In Customer Service workspace and Omnichannel for Customer Service, smart assist suggests knowledge articles in real-time based on your ongoing conversation with your customer.
 
-1. In the Customer Service Hub site map, go to **Customers** > **Accounts**.
+In the app side pane, select the **Smart assist** (light bulb) icon to view suggestions of knowledge articles that are related to your conversation.
 
-2. Select any active account from the list of accounts.
+## Save time searching with suggest-as-you-type
 
-3. On the **Summary** tab, scroll down to the **Linked Knowledge Articles** subgrid.
+If your administrator has [turned on suggest-as-you-type](set-up-knowledge-management-embedded-knowledge-search.md#enable-the-suggest-as-you-type-option), the system suggests related knowledge articles as you type in the search box.
 
-  > [!NOTE]
-  > The name of the subgrid can vary depending on the customizations your organization has made.
+Your search term is matched against article titles, and the matching results appear in a flyout menu. If your search term consists of more than one word, only titles that contain the full string, not individual words, are matched. For example, if you search for **Cheque Book Reissue**, articles with "Cheque Book Reissue" in the title are returned. Articles with the individual words "Cheque," "Book," or "Reissue" in the title aren't.
 
-4. Select **More commands** (⁝), and then select **Add Existing Knowledge Article**.
+Suggest-as-you-type suggests up to six knowledge articles. Text that matches your keyword is highlighted in yellow. When you select the record, the system displays the article inline on the knowledge search control embedded on a form, on an application tab in Customer Service workspace, and as an inline view in the direct knowledge base search.
 
-   > [!div class=mx-imgBorder]
-   > ![Add an existing knowledge article.](media/add-existing-knowledge-article.png "Add an existing knowledge article")
+:::image type="content" source="media/autosuggest-ka-csw.png" alt-text="Screenshot of the suggest-as-you-type feature in action.":::
 
-5. Search for the knowledge article that you want to link, and select **Link.**
+## Search using favorites
 
-   > [!div class=mx-imgBorder]
-   > ![Search for a knowledge article to link to an entity.](media/search-related-article.png "Search for a related knowledge article to link to an entity")
+If your administrator has provided [privileges to custom roles](#prerequisites), you can mark the knowledge articles you use most often as favorites to get back to them quickly while you're working on a case. You can mark up to 50 articles as favorites.
 
-6. Select **Done**. The article will appear in the **Linked Knowledge Articles** subgrid.
+1. Select an article from the list of search results.
+1. Select the **Favorite** (heart) icon to add the article to your favorites list, or, if it's already a favorite, remove it.
 
-## Independent knowledge base search
+View your favorite articles on the **My favorites** tab. This tab is available in the app side pane, the standalone search control, the form-embedded control, and the reference pane.
 
-Agents can do knowledge base searches outside of cases using the **Knowledge Search** option in the sitemap under **Knowledge**.  This functionality performs like a knowledge search hub. 
+The article you most recently marked as a favorite appears first in your favorites list. If an article is deleted, it no longer appears in the list.
 
-Agents can do the following:
+Favorite articles are saved in the language in which you viewed them when you marked them as a favorite. The translated version of a favorite article doesn't appear as a favorite.
 
-- View an article 
-- Send an article pop out 
-- Copy and send article URLs (when preconfigured)
+If you create a major or minor version of a favorite article, then the new version appears as a favorite and the earlier version is removed from the list.
 
-To configure the ability to copy and send article URLs, see [Configure knowledge base article URLs](#configure-knowledge-base-article-urls).
+In Customer Service workspace and Omnichannel for Customer Service, when you select a favorite article, it opens on an application tab. In Customer Service Hub, the article opens in a new browser window.
 
-  > [!div class=mx-imgBorder]
-  > ![Independent KB search.](media/kb-independent-search.png "Search knowledge articles outside of cases")
+## Search across external search providers
 
-  1. In the sitemap, select **Knowledge Search**.
-  2. In search box, type keywords of an article.  
-  3. Select the copy URL icon to copy the article URL.
-  4. To open an article in a new window, select the pop-out icon.
-  5. To copy the article URL, select **Copy URL**.
-  6. To open the article in a new window, select **Pop out**.  
+In Customer Service Hub and Customer Service workspace, you can search for files, documents, and articles from data sources outside your Dynamics 365 organization, if your administrator has configured this option. To view those results, select the source in the list under **Knowledge**.
 
-### Configure knowledge base article URLs
+In Customer Service Hub:
 
-Knowledge articles can be configured with their portal URLs, and then agents can copy and share the URL links.
+> [!div class=mx-imgBorder]
+> ![Screenshot of the agent view of search providers in Customer Service Hub.](media/search-provider-agent.png "Screenshot of the agent view of search providers in Customer Service Hub")
 
-> [!NOTE]
-> Before you can configure knowledge articles with their own URLs, you must create a portal using your domain name. For information on how to create a portal, see [Create a portal in an environment containing customer engagement apps](/powerapps/maker/portals/create-dynamics-portal).
+In Customer Service workspace:
 
-You can configure a knowledge base article URL in the Customer Service admin center or Customer Service Hub app by performing the following steps:
+For more information on setting up search providers, see [Set up external search providers](set-up-search-providers.md#set-up-external-search-providers).
 
-1. Go to the **Support portal connection** section.
+## Search across integrated providers in Customer Service Hub and Customer Service workspace
 
-### [Customer Service admin center](#tab/customerserviceadmincenter)
+In Customer Service Hub and Customer Service workspace, view and sort search results from [any providers your administrator has added](add-search-provider.md) for you. The name of the search provider the article was pulled from appears on the knowledge article card. If it's truncated, hover over it to view the full name.
 
-  1. In the site map, select **Knowledge** in **Agent experience**. The **Knowledge** page appears.
-  1. On the **Knowledge** page, go to the **Portal** section and select **Manage**. The **Portal** page appears.
-  1. On the **Portal** page, go to the **Support portal connection** section.
+1. In the Customer Service workspace site map, select a case and then select **Knowledge search** on the app side pane.
+1. Enter the search keyword. You'll see search results along with the search provider.
+1. Select **Show more** to view more results.
 
-### [Customer Service Hub](#tab/customerservicehub)
+## View knowledge articles
 
-  1. In the site map, go to **Service Management** and select **Settings** in **Knowledge Base Management**.
-  1. On the **Settings** page, go to the **Support portal connection** section.
+When you select an article in the search results, where it opens depends on where you searched for it.
 
----
+### View the knowledge article in an application tab in Customer Service workspace and Omnichannel for Customer Service
 
-2. Set the **Use an external portal** toggle to **Yes**.
+In Customer Service workspace and Omnichannel for Customer Service, the article opens in an application tab. You can open up to 10 articles in app tabs.
 
-3. In the **URL format** field, enter the URL name.
+:::image type="content" source="media/csw-article-app-tab.png" alt-text="Screenshot of a knowledge article viewed in an app tab.":::
 
- 4. Select **Save**.
+You can perform the following actions on knowledge articles you view in an app tab:
 
-The knowledge base article link is now active and can be copied and shared.
+- Select **Copy URL** to copy the external URL of the article to share with your customer in channels like chat or email.
+- If your administrator has turned on [feedback and ratings for knowledge articles](../customerengagement/on-premises/customize/enable-entity-feedback.md#enable-an-entity-for-feedback-and-ratings), you can select the thumbs-up or thumbs-down icon to rate how helpful the article was. If you select the thumbs-down icon, a comment box appears, where you can enter the reason for your rating.
 
-### Filter knowledge articles
+    Customer service agents and customer service managers can create or view feedback based on their role and privileges. Unless your administrator allows it, you can create, view, or edit only your own feedback. Customer service managers and knowledge managers can view your feedback.
 
-With the help of text and visual filters, you can filter the knowledge articles. To see knowledge articles in specific states, use the **Status** filter. You can filter search results to see all draft, published, or approved articles. See articles that are categorized as internal and external. You can also filter the articles based on date and language.
+### View the knowledge article in the search control in Customer Service Hub
 
-  > [!div class=mx-imgBorder]
-  > ![Knowledge article filter.](media/km-filter1.png "Knowledge article filter")  
-  
-  
-When you select the filter icon, you can see the **Filter by** menu where you can filter the items based on the following categories.
+In Customer Service Hub, select an article title. The full article opens inline, right in the search control.
 
-  | Category | Sub-category |
-  |-----------------------|-----------------------|
-  | Status | <ul> <li> Draft </li> <li> Approved </li> <li> Published </li> </ul> |
-  | Visibility | <ul> <li> Internal </li> <li> External </li> <li> All </li> </ul> |
-  | Date | <ul> <li> Last 7 days </li> <li> Last 30 days </li> <li> Last 6 months </li> <li> Last year </li> <li> All </li> </ul> |
-  | Language | <ul> <li> List of languages </li> </ul> **Note:** The language list is based on the articles that are present in those languages. For example, there are a total of 50 articles in five different languages such as French, English, Japanese, Spanish, and Danish. The language filter will show only these five languages. |
+If you see an error like this when you open an article: "Update your origins allow list if any iframe in the article doesn't work or displays error," ask your administrator to [update your origins allow list](configure-knowledge-article-origin-allow-list.md).
 
-### Personalize your knowledge search article filters
+You can perform the following actions on knowledge articles you view inline:
 
-If your administrator has configured knowledge filter personalization settings, as an agent, you can select the filters you want to use.
+- Link it to a record, or, if it's already linked, unlink it.
+- [Email it to a customer](email-articles.md#email-a-knowledge-article).
 
-Agents can do the following:
-- Set preselects
-- Activate or deactivate a filter
+    :::image type="content" source="media/km-inline-article-view.png" alt-text="Screenshot of a knowledge article viewed inline in the search control.":::
 
-Only the filters that your administrator has configured are viewable. If your administrator deactivates a filter, that filter becomes invisible without notifying you. If you notice that a filter has suddenly disappeared, contact your administrator for assistance. If your administrator disables all filters, you won't see any filters, and a message will be displayed that says, "No filters have been configured. Contact your administrator."
+- Select the **Copy Link** icon ![Copy knowledge article link button Dynamics 365 Customer Service](../customer-service/media/copy-link-button.png "Copy knowledge article link button Dynamics 365 Customer Service") to copy the external URL of the article to share with your customer in channels like chat or email.
 
-Any personalization you make to your filter selections will also be applicable to the form-based knowledge control and standalone knowledge base search page.
+The copy and email options are available only if the knowledge article is [published on an external portal](set-up-knowledge-management-embedded-knowledge-search.md).
 
-If you deactivate a filter, it will appear as deactivated. If you reactivate the same filter later, the filter will keep its previous configuration.
+### View the knowledge article on a new window
 
-1. In **Customer Service Hub**, go to **Service** > **Knowledge** > **Knowledge Personalization**.
-2. For each filter value you want to change, select the ellipsis in the top-right corner, and then select **Preselects**.
-3. To make a filter value available by default, toggle the preset next to the filter to the right so that **Preselected** appears next to the filter name.
-4. When you are finished making your selections, select **Done** > **Save**.
-5. If you want to deactivate a filter, select the ellipsis in the top-right corner for the filter you want to stop using, and then select **Deactivate**.
-6. Select **Done** > **Save**.
-7. When you are ready to reactivate the filter, select the ellipsis again, and then select **Activate**.
-   All of the previous configurations will be reinstated.
+In Customer Service Hub, in the **Knowledge Search** reference pane, select the pop-out option to view the article on a new window.
 
-### Sort knowledge articles
-
-The knowledge base search control provides the option to sort knowledge articles. Select the up-arrow icon to view the sorting options and select one of the options from the following:
-
-- Relevance
-- Number of views
-- Last modified date (newest first) 
-- Last modified date (oldest first)
-
-  > [!div class=mx-imgBorder]
-  > ![Knowledge article sort.](media/km-sort.png "Knowledge article sort")
-  
-
-### Link and unlink a knowledge article to a record
-
-When configured, you can link an article to a case. You can associate and dissociate the knowledge article with a record.
-
-  > [!div class=mx-imgBorder]
-  > ![Link to case.](media/knowledge-base-search-2.png "Link or unlink a knowledge article with a record")
-
-  
-1. In the top-right of the article, there's a link icon. 
-2. If linking is preconfigured, you can select the link icon and it will link the article to your case.
-3. Articles that are linked to a case will display  **Linked to Case** in blue in the bottom left and the link icon will update to show the link.
-
-### Email the knowledge article
-
-Use the **Email** button to send the knowledge article via mail. When you select the **Email** button, first, the knowledge article is linked to the current case record. Simultaneously, an email form opens with the link to the article. The article content is populated in the email body. The fields are automatically populated based on the case and customer details. Add other information as needed, and then on the command bar, select **Send**.
-
-  > [!div class=mx-imgBorder]
-  > ![Email knowledge article.](media/km-email.png "Email knowledge article")
-
-### View the knowledge article inline in the search control
-
-Select an article title to see its full content rendered in the same control. The article opens inline, and you can scroll to read the complete article.
-
-However, if you see an error while trying to open an article, it might be because the link types used in the article aren't a part of the origins allow list. The error message "Update your origins allow list if any iframe in the article doesn't work or displays error" will also appear. You must contact your administrator to update your origins allow list. More information: [Configure the origins allow list for knowledge articles](configure-knowledge-article-origin-allow-list.md)
-
-In this view mode, you can perform actions such as linking the knowledge article to a record or emailing the knowledge article to a customer. To learn more about sending the knowledge articles via email, go to [Email the knowledge article](#email-the-knowledge-article).
-
-  > [!div class=mx-imgBorder]
-  > ![Knowledge article inline view.](media/km-inline-article-view.png "Knowledge article inline view")
-
-> [!NOTE]
-> - Select the **Copy Link** button ![Copy knowledge article link button Dynamics 365 Customer Service](../customer-service/media/copy-link-button.png "Copy knowledge article link button Dynamics 365 Customer Service") to copy the external URL of the article so you can share it with your customers over channels like chat or email. If you use a browser other than [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)], this option isn't available. 
->
-> - The **Copy Link** and **Email Link** options are available only if your organization is using an external portal to publish the knowledge articles and your administrator selected the **Use an external portal** checkbox during embedded knowledge search setup. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Use embedded knowledge search to set up knowledge management](set-up-knowledge-management-embedded-knowledge-search.md)
->
-> - The **Copy Link**, **Email Link**, and **Email** options can be used only for published or expired articles.
-
-## View auto-filtered results
-
-As a customer service agent, to view the most relevant results, you can have knowledge articles automatically filtered based on the case data. This helps with identifying the most relevant articles so that you can resolve customer queries quickly and accurately. You can also disable the auto-filter results and search the entire knowledge base.  
-
-An administrator or system customizer must configure this option for you. More information: [Configure automatic filtering](add-knowledge-base-search-control-forms.md#configure-automatic-filtering-for-the-web-client)
-
-To view the auto-filtered results:
-
-1. Search knowledge articles from the related section of the case. More information: [Search for knowledge articles in the Customer Service Hub](#search-for-knowledge-articles-in-the-customer-service-hub)
-
-2. The articles are automatically filtered and displayed based on case data.
-
-3. If you want to disable the automatic filtering option and search the entire knowledge base for articles, deselect **Auto-filter results**.  
-
-    > [!NOTE]
-    > Your administrator or system customizer must enable **Users can turn off automatic filtering** option in order for you to see the **Auto-filter results** option. If the **Users can turn off automatic filtering** option is not enabled, you'll always see the auto-filtered results. More information: [Configure automatic filtering](add-knowledge-base-search-control-forms.md#configure-automatic-filtering-for-the-web-client)
-
-Let’s understand this in detail with the help of an example.
-
-In the following illustration, the case subject is **Xbox**. If automatic filtering is configured on the case subject, with the **Auto filter results** checkbox selected, only those knowledge articles whose subject is **Xbox** are displayed. Other articles are automatically filtered out, as shown in the following image.
-
-![Select Auto filter results.](media/ka-select-auto-filter-results.png "Select Auto filter results")   
-  
-However, if the **Auto-filter results** checkbox isn't selected, you can see more articles that aren't related to the subject. These are the results from the entire knowledge base.
-
-![Deselect Auto-filter results.](media/ka-deselect-auto-filter-results.png "Deselect Auto-filter results")
-
-## View search results from external sources
-
-If your administrator has configured the ability for you to search for files, documents, or articles from data sources outside of your current Dynamics 365 organization, you can view those results by selecting the provider from the drop-down list under **Knowledge**.
-
-   > [!div class=mx-imgBorder]
-   > ![Agent view of search providers.](media/search-provider-agent.png "Agent view of available search providers")
-
-For more information on setting up search providers, see [Set up a search provider in Customer Service Hub](set-up-search-providers.md).
-    
-## Submit ratings and feedback for knowledge articles
-
-As a customer service agent, you can easily provide feedback on knowledge articles with the help of knowledge article rating in the Customer Service Hub. Knowledge article rating lets you provide feedback on knowledge articles within the context of case resolution. Knowledge managers can capture and review the feedback on the articles to improve and maintain a healthy knowledge base.
-
-When you are working on a case and refer to an article from the **Knowledge Base Search** control, you'll be presented with an option to rate whether the article is helpful and provides relevant information to assist customers quickly. If you think it’s not helpful, you can rate the article accordingly and provide comments on how it can be improved.
-
-> [!NOTE]
-> - Ensure that the knowledge article entity is enabled for feedback. To learn more, see [Enable an entity for feedback/ratings](/dynamics365/customer-engagement/customize/enable-entity-feedback).
-> - Customer service agents and customer service managers can create, or view feedbacks based on their role and privileges on feedback entity. Out of the box, customer service agents can create, view, or edit their own feedback only. Customer service managers or knowledge managers can view feedback submitted by all agents.
-
-1. Open an article from search results to read it.
-
-2. You can rate a knowledge article and submit feedback. 
-
-    You can provide your feedback on the article, whether it is helpful or not, by selecting the **Thumbs up** or **Thumbs down** button.    
-
-    ![Provide feedback.](media/ka-rating-feedback-thubms-up-down.png "Provide feedback")
-
-    If the article is not helpful, you can also provide your comments in the comment box on how the article can be improved. The comment box is displayed when you select **Thumbs down**.
-
-    ![Provide comments.](media/ka-rating-feedback-provide-comments.png "Provide comments")
-
-To set up the feedback control, see [Set up knowledge management](set-up-knowledge-management-embedded-knowledge-search.md#set-up-knowledge-management).
+:::image type="content" source="media/knowledge-search-pop-out-csh.png" alt-text="View knowledge article in a new window":::
 
 ### See also
 
-[Add the Knowledge Base Search control to forms](add-knowledge-base-search-control-forms.md)
+[Filter knowledge articles](filter-articles.md#filter-knowledge-articles)
 
-[Create and manage knowledge articles](customer-service-hub-user-guide-knowledge-article.md)
+[Link and unlink knowledge articles](link-articles.md#link-and-unlink-knowledge-articles)
 
-[Understand knowledge base search mechanisms](knowledge-base-search-methods.md)
+[Email a knowledge article](email-articles.md#email-a-knowledge-article)
 
-[Set up a search provider in Customer Service Hub](set-up-search-providers.md)
+[Submit ratings and feedback for knowledge articles](submit-feedback.md#submit-ratings-and-feedback-for-knowledge-articles)
 
-[Add a knowledge article subgrid to a form](add-knowledge-base-search-control-forms.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]

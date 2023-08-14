@@ -8,18 +8,16 @@ ms.custom:
 ms.topic: article
 author: cabeln
 ms.author: cabeln
-manager: shellyha
 ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Segmentation usage report
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 With the marketing segmentation usage report, you can analyze how segments are used across your marketing activities. The marketing segment usage report shows which segments are used in which marketing activities and helps you identify orphaned segments.
 

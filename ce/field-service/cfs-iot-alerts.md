@@ -2,26 +2,21 @@
 title: "Create IoT alerts and convert IoT alerts into work orders with Connected Field Service for Dynamics 365 Field Service | MicrosoftDocs"
 description: Learn how to create IoT alerts and convert IoT alerts into work orders with Connected Field Service for Dynamics 365 Field Service
 ms.date: 03/25/2021
-ms.reviewer: krbjoran
 
 ms.subservice: connected-field-service
 ms.topic: article
 applies_to:
 - "Dynamics 365 (online)"
 - "Dynamics 365 Version 9.x"
-author: FieldServiceDave
-ms.author: daclar
-manager: shellyha
-search.app:
-- D365CE
-- D365FS
+ms.author: vhorvath
+author: vhorvathms
 ---
 
 # Create IoT alerts and convert IoT alerts into work orders
 
 Within Dynamics 365 Field Service, IoT alerts are a subset of IoT messages that may require attention. For instance, maybe a configured sensor in a refrigerator you service has alerted that humidity has risen above an acceptable threshold. To help with proactive service delivery, you can convert that incoming IoT alert directly to a work order, which can then be scheduled and assigned to a service technician. 
 
-In this aritlce, we will review:
+In this article, we will review:
 
 - How IoT alerts are triggered 
 - How to see IoT alerts in Field Service 

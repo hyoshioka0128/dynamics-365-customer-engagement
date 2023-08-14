@@ -7,15 +7,13 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - developer
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Extend customer journeys using custom channels
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 Customer journey orchestration in Dynamics 365 Marketing lets marketers create multi-step, multi-channel marketing campaigns that target a specific segment, deliver marketing email messages, respond to contact interactions, launch workflows, and more. More information: [Use customer journeys to create automated campaigns](../../marketing/customer-journeys-create-automated-campaigns.md)
 

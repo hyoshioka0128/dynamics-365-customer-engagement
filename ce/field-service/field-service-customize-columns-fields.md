@@ -2,20 +2,14 @@
 title: "Create and edit columns (fields) in Dynamics 365 Field Service | MicrosoftDocs"
 description: Learn about best practices for creating and editing fields in Dynamics 365 Field Service.
 ms.date: 02/18/2022
-ms.reviewer: krbjoran
-ms.service: dynamics-365-field-service
 ms.topic: article
-author: FieldServiceDave
-ms.author: daclar
-manager: shellyha
-search.app: 
-  - D365CE
-  - D365FS
+author: lmasieri
+ms.author: lmasieri
 ---
 
 # Create and edit Field Service columns (fields)
 
-When deploying Field Service, you may need to add new columns (also called fields) to the various tables (sometimes referred to as "entities") that you use, like work orders, bookable resource bookings, customer assets, and more.
+When deploying Field Service, you may need to add new columns (also called fields) to the various tables (sometimes referred to as "entities") that you use, like work orders, bookable resource bookings, customer assets, and more. Mobile views can display up to three columns.
 
 Follow these best practices when creating and editing columns:
 

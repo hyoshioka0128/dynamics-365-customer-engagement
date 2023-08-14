@@ -8,15 +8,13 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - developer
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Customer Journey workflow definition
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 The Customer Journey design is persisted in JSON format in the **msdyncrm_workflowdefinition** attribute of the **msdyncrm_customerjourney** entity. The JSON serialized customer journey design is called *Customer Journey workflow definition*.  
  

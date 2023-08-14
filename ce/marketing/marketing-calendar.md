@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Work with marketing calendars
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 The marketing calendar provides a calendar-style view where you can see and create time-based items like journeys, events, sessions, and appointments. It resembles Microsoft Outlook in both appearance and use.
 
@@ -99,6 +97,5 @@ To create a new calendar item while working in day or week view:
 ### See also
 
 [Create and customize marketing calendars](customize-marketing-calendars.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

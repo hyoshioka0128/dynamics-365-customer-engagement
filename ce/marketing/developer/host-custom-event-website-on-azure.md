@@ -8,15 +8,13 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - developer
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Host your custom event website on Azure
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 This topic walks you through the process of hosting your custom event website on **Azure**. More information [Build and host custom event website](event-management-web-application.md).
 

@@ -3,24 +3,19 @@ title: "Set up delegate access for Dynamics 365 App for Outlook  (Dynamics 365 a
 ms.custom: 
 description: Set up delegate access for Dynamics 365 App for Outlook. 
 ms.date: 05/20/2021
-ms.reviewer: 
-
+ms.reviewer: jimholtz
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
 applies_to: Dynamics 365 apps
 ms.assetid: 0dfd6100-b4ed-4959-9acb-cc0a1dbbb6d6
 caps.latest.revision: 99
-author: mduelae
-ms.author: mkaur
-manager: kvivek
+author: sidhartg
+ms.author: sidhartg
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Outlook
 ---
 
 
@@ -39,7 +34,7 @@ Set up delegate access to allow someone to track information in your Dynamics 36
 ## Enable delegate access
 
 
-To enable delegate access, you need to enable the **OrgDBOrgSettings** in your organization. Microsoft Dataverse apps provide the **OrgDBOrgSettings** tool that gives administrators the ability to implement specific updates that were previously reserved for registry implementations. For more information, see [Environment database settings](/power-platform/admin/environment-database-settings.md). After extracting the tool, enable **OrgDBOrgSettings TrackAppointmentsFromNonOrganizer** and **DelegateAccessEnabled**.
+To enable delegate access, you need to enable the **OrgDBOrgSettings** in your organization. Microsoft Dataverse apps provide the **OrgDBOrgSettings** tool that gives administrators the ability to implement specific updates that were previously reserved for registry implementations. For more information, see [Environment database settings](/power-platform/admin/environment-database-settings). After extracting the tool, enable **OrgDBOrgSettings TrackAppointmentsFromNonOrganizer** and **DelegateAccessEnabled**.
 
 You can also use [this tool](https://github.com/seanmcne/OrgDbOrgSettings/releases/) to edit **OrgDBOrgSettings TrackAppointmentsFromNonOrganizer** and **DelegateAccessEnabled**.
 

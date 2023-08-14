@@ -1,24 +1,19 @@
 ---
-title: "Generate iCalendar files for events and sessions (Dynamics 365 Marketing) | Microsoft Docs"
-description: "Learn how to add a button to emails that generates an iCalendar file for an event or session Dynamics 365 Marketing."
-ms.date: 06/24/2021
-
-ms.custom: 
-  - dyn365-marketing
+title: Generate iCalendar files for events and sessions
+description: Learn how to add a button to emails that generates an iCalendar file for an event or session Dynamics 365 Marketing.
+ms.date: 07/28/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Generate iCalendar files for events and sessions
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 For many business people, software-based calendars are an essential organizational tool. When attendees register for an event, they want a way to track not only the date of the event, but what sessions they plan to attend.
 
@@ -27,9 +22,6 @@ The Dynamics 365 Marketing email editor includes the ability to automatically ge
 ## How to create a customized iCalendar file
 
 iCalendar files are generated using the new **Add to Calendar** button option in the email editor.
-
-> [!NOTE]
-> The **Add to calendar** button is only available in the new email editor. To enable the new email editor, an administrator must enable the **Updated email editing experience** [feature switch](admin-feature-switches.md).
 
 To create an **Add to Calendar** button:
 
@@ -48,6 +40,9 @@ To create an **Add to Calendar** button:
 
 When you send an email with the **Add to Calendar** button, contacts who registered for the event will receive a personalized link to download their agenda as an iCalendar file.
 
+> [!NOTE]
+> If a contact didn't register for the event or session you select for the button, they will not see the **Add to Calendar** button in their email.
+
 ## Customize the iCalendar file descriptions
 
 Each event or session in the iCalendar file contains a configurable description. To configure the description content:
@@ -62,3 +57,5 @@ Each event or session in the iCalendar file contains a configurable description.
 ## Streamed event check-ins
 
 For streamed events, a check-in button is automatically added to the iCalendar file description if the calendar content is empty. You can remove the check-in button or add a new button with the link set to the following wildcard: `{{msevtmgt_checkin_url}}`. The wildcard is converted to a personalized check-in link for the streamed event when the contact downloads the iCalendar file.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

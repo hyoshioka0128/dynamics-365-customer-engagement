@@ -1,18 +1,25 @@
 ---
 title: Create a Microsoft Teams meeting in Dynamics 365
 description: Learn how to create a Teams meeting in Dynamics 365.
-ms.date: 04/20/2022
+ms.date: 06/22/2023
 ms.topic: article
 ms.service: dynamics-365-sales
 author: sbmjais
 ms.author: shjais
-manager: shujoshi
 ---
 
-# Create a Microsoft Teams meeting (preview)
+# Create a Microsoft Teams meeting
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+Create a Teams meeting from Dynamics 365 or Microsoft Outlook
 
+## License and role requirements
+
+| Requirement type | You must have |
+|-----------------------|---------|
+| **License** | <ul><li>Dynamics 365 Sales Premium, Dynamics 365 Sales Enterprise, Dynamics 365 Sales Professional, Dynamics 365 Team Members, or any Dynamics 365 customer engagement app license</li> <li>Microsoft Teams license</li></ul>  <br>More information: <ul><li>[Dynamics 365 Sales pricing](https://dynamics.microsoft.com/sales/pricing/)</li><li>[Microsoft Teams pricing](https://www.microsoft.com/microsoft-teams/compare-microsoft-teams-options?activetab=pivot:primaryr2&rtc=1)</li><li>[Dynamics 365 Team Members](/dynamics365/get-started/team-members-license)</li><li>[Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)</li></ul> |
+| **Security roles** | <ul><li>Any primary sales role, such as salesperson, or sales manager</li><li>Any role that has access to a Dynamics 365 record</li></ul> <br>  More information: [Primary sales roles](../security-roles-for-sales.md#primary-sales-roles)|
+
+## Overview
 
 You can create a Teams meeting from Dynamics 365 or Microsoft Outlook. Link a Dynamics 365 record to the meeting to view record details before the meeting, in a side panel during the meeting, and after the meeting.
 
@@ -23,6 +30,11 @@ If a record isn't linked to the meeting, you can still add the **Dynamics 365** 
 ## Create Teams meetings in Dynamics 365
 
 In Dynamics 365, you can create a Teams meeting from the **Timeline** of a record or from the **Activities** page.
+
+> [!IMPORTANT]
+> - For the join link to be created successfully, the user enabling the meeting for Teams needs to be the meeting organizer. The organizer field is not exposed by default on the appointment form but the value defaults to the user who creates the meeting.
+> - The personal standards and formats selected by a user in Dynamics 365 affect the formatting of the Teams meeting details saved within the description of the meeting. To view the selected format, select **Settings** (:::image type="icon" source="../media/settings-icon.png" border="false":::) > **Personalization Settings**, and then select the **Formats** tab.
+> - When you create a Teams meeting from Dynamics 365, the appointment status is set to **Free** and no reminders are sent to the participants.
 
 ### Create a Teams meeting from the Timeline
 
@@ -66,4 +78,4 @@ For more information on using the Dynamics 365 App for Outlook, see [Basic navig
 [Work with notes during a meeting](work-with-notes.md)   
 [Work with tasks during a meeting](work-with-tasks.md)   
 [Work with activities during a meeting](work-with-activities.md)   
-[Conversation intelligence capabilities during a meeting](ci-capabilities.md)   
+   

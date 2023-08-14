@@ -1,11 +1,10 @@
 ---
 title: "Create message templates in Omnichannel for Customer Service | MicrosoftDocs"
 description: "Learn how to create message templates in Omnichannel for Customer Service."
-ms.date: 04/04/2022
+ms.date: 05/07/2023
 ms.topic: article
 author: neeranelli
 ms.author: nenellim
-manager: shujoshi
 ms.reviewer: nenellim
 ---
 
@@ -29,13 +28,10 @@ Message templates enable the one-time creation of reusable messages that can be 
 
 1. Select **Manage** for **Message templates**.
 
-    > [!Note]
-    > If you're using the Omnichannel Administration app, under **Settings**, select **Message templates**.
-
 1. Select **New**, and enter the following details:
 
     - **Name:** Enter a name.
-    - **Channel:** Select a channel (SMS or Twitter).
+    - **Channel:** Select SMS.
     - **Default language:** Select a language.
     - **Default text:** Enter the default text for the message.
 

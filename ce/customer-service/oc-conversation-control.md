@@ -1,11 +1,10 @@
 ---
 title: "Omnichannel communication panel (Conversation control) | MicrosoftDocs"
 description: "Learn what you can do as an agent in the communication panel in Omnichannel for Customer Service when you interact with the customer."
-ms.date: 04/04/2022
+ms.date: 08/02/2023
 ms.topic: article
 author: neeranelli
 ms.author: nenellim
-manager: shujoshi
 ---
 
 # View the communication panel for conversations
@@ -14,12 +13,19 @@ manager: shujoshi
 
 The communication panel is where you, as an agent, interact with your customer. When you sign in to the application, the communication panel is in hidden mode by default. You can view the communication panel only when you accept an incoming conversation to communicate with the customer.
 
+If you want to minimize the communication panel, select **Minimize**. The communication panel is collapsed to a window in the left corner of the Active Conversation form, giving you more screen space.
+
+> [!NOTE]
+> Minimizing the communication panel is an early access feature. You can opt in early to enable these features in your environment, which will allow you to test these features and then adopt them across your environments. For information about how to enable these features, see [Opt in to early access updates](/power-platform/admin/opt-in-early-access-updates).
+
+
 You can do the following tasks in the communication panel:
 
 - Send quick replies.
 - Search for and share knowledge articles with the customer with whom you are interacting.
 - Transfer the conversation (work item) to another agent or queue.
 - Use the consult option if you need help to resolve the work item.
+- Generate a summary of the conversation. More information: [View and share auto-summarized conversations](cs-ai-generated-summary.md)
 
  > [!div class=mx-imgBorder]
  > ![Omnichannel communication panel chat interface.](media/oceh-conversation-control-chat-interface.png "Omnichannel communication panel chat interface")  
@@ -152,7 +158,7 @@ To learn more, see [Take notes specific to conversation](oc-take-notes.md).
 
 ## Link to conversations
 
-When you have a conversation with a customer, you can link the conversation to the record (case or account/contact).
+When you have a conversation with a customer, you can use the link option that's at the bottom of the conversation control to link the conversation to the case, account, or contact record.
 
 To learn more, see [Search, link, and unlink a record to the conversation](oc-search-link-unlink-record.md).
 
@@ -169,10 +175,10 @@ To learn more, see [Monitor real-time customer sentiment](oc-monitor-real-time-c
 [Manage sessions](oc-manage-sessions.md)  
 [Manage applications](oc-manage-applications.md)  
 [Manage presence status](oc-manage-presence-status.md)  
-[View customer summary and know everything about customers](oc-customer-summary.md)  
+[View customer information on Active Conversation form](oc-customer-summary.md)  
 [Search for and share knowledge articles](oc-search-knowledge-articles.md)  
 [Take notes specific to conversation](oc-take-notes.md)  
-[View customer summary for an incoming conversation request](oc-view-customer-summary-incoming-conversation-request.md)  
+[View active conversations for an incoming conversation request](oc-view-customer-summary-incoming-conversation-request.md)  
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

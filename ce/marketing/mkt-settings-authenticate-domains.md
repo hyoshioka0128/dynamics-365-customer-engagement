@@ -1,23 +1,24 @@
 ---
-title: "Domain authentication (Dynamics 365 Marketing) | Microsoft Docs"
+title: "Domain authentication (old version) (Dynamics 365 Marketing) | Microsoft Docs"
 description: "Authenticate your domains to maximize email deliverability with DKIM and enable embedding of Dynamics 365 Marketing forms on your own website in Dynamics 365 Marketing."
-ms.date: 05/04/2022
+ms.date: 03/10/2023
 ms.custom: 
   - dyn365-marketing
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
-# Authenticate your domains
+# Authenticate your domains (old version)
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This section explains the old domain authentication for outbound marketing; for an updated version based on real-time marketing, see "[new version](domain-authentication.md)".
 
 Domain authentication is important for two reasons:
 
@@ -29,6 +30,9 @@ The primary purpose of email-domain authentication is to detect forged messages 
 When you error check or go live with a marketing email message, the verification system requires that the message uses a from-address that specifies an authenticated domain registered and is confirmed for your organization. You'll get a warning if you try to send a message that has a from-address from an unregistered domain. You'll also get an error if you try to send a message that uses a from-address from a domain that is registered as belonging to another organization. You can ignore the warning (but will probably have low deliverability), but you can't go live with the error.
 
 To learn more about email marketing and deliverability see [Best practices for email marketing](get-ready-email-marketing.md). To learn more about embedded forms and pre-filling, see [Integrate with landing pages on external websites](embed-forms.md).
+
+> [!NOTE]
+> When real-time marketing features are installed, a wizard is included to authenticate domains for both real-time marketing and outbound marketing. To learn how to use the real-time marketing domain authentication wizard, see the [Real-time marketing domain authentication](domain-authentication.md) article. If real-time marketing is not installed, you must follow the setup described below in this article to authenticate domains for use in outbound marketing features.
 
 ## The default authenticated domain
 
@@ -215,5 +219,7 @@ To benefit from DKIM, the from-address for each message you send must show a dom
 [Best practices for email marketing](get-ready-email-marketing.md)  
 [Integrate with landing pages on external websites](embed-forms.md)  
 [page personalization](personalized-page-content.md)  
+[Domain authentication in real-time marketing](domain-authentication.md)
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

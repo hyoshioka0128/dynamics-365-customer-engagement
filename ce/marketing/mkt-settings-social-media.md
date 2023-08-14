@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Configure your social media accounts
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 Social posting enables Dynamics 365 Marketing users to author, schedule, and publish posts to a variety of social media channels and accounts. You must configure and authenticate each channel and account that you'd like to make available for use with this feature. In the current version, you can configure accounts for Twitter, LinkedIn, and Facebook.
 
@@ -48,6 +46,5 @@ You can delete a social configuration at any time to prevent Dynamics 365 Market
 
 [Open the administration settings](open-settings.md)  
 [Schedule and post messages on social media](social-posting.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

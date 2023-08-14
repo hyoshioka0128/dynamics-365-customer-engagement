@@ -9,17 +9,15 @@ ms.custom:
 ms.topic: troubleshooting
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Frequently asked questions for Dynamics 365 Marketing - General
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 ## Where can I find help for errors, unexpected behavior, crashes, or bugs?
 
@@ -56,3 +54,5 @@ Admins can use the [Help + support experience](/power-platform/admin/get-help-su
 
 [Administration and setup FAQ](setup-troubleshooting.yml)   
 [Installation and management FAQ](install-manage-faq.yml)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

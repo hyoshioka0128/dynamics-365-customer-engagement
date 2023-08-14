@@ -8,15 +8,13 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - developer
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Basic customer journey API operations
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 Potential customers follow a path as they engage with your company. They start by discovering your product, evaluating whether it meets their needs, looking for a good offer, then finally making a purchase. This process is called the *customer journey*.
 

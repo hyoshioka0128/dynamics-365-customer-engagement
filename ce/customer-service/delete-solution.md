@@ -1,24 +1,19 @@
 ---
 title: "Uninstall solutions in Omnichannel for Customer Service | MicrosoftDocs"
 description: "Perform the steps mentioned in the topic to remove solutions in Omnichannel for Customer Service."
-ms.date: 05/02/2022
+ms.date: 05/13/2022
 author: neeranelli
 ms.author: nenellim
-manager: shujoshi
 ---
 
 # Uninstall solutions in Omnichannel for Customer Service
 
-
-
 [!INCLUDE[cc-use-with-omnichannel](../includes/cc-use-with-omnichannel.md)]
-
-## Introduction
 
 When you uninstall Omnichannel for Customer Service from your organization, the omnichannel solutions are not removed. If you want to remove omnichannel solutions from your organization, you must use the same order as mentioned in the following table.
 
-> [!Important]
-> Some solutions are shared across apps, and should not be removed unless you intend to uninstall those apps too; skip those solutions.
+> [!IMPORTANT]
+> Some solutions are shared across apps, and shouldn't be removed unless you intend to uninstall those apps too; skip those solutions.
 >
 > For example, if you plan to remove omnichannel solutions from your organization, you must remember that the unified routing part of Omnichannel for Customer Service solutions might be used in unified routing for Customer Service. So you must ensure that you don't uninstall or delete the common solutions as it might affect the way unified routing works in Customer Service.
 
@@ -62,26 +57,14 @@ When you uninstall Omnichannel for Customer Service from your organization, the 
     |	28	|	 `OmnichannelFacebook`	                        |		|
     |	28	|	 `msdyn_OmnichannelBotEnablerPatch`	            |		|
     |	29	|	 `OmnichannelBotEnabler`	                    |		|
-    |	30  |   `OmnichannelTelephony` |  You must delete all the related workstreams before you delete OmnichannelTelephony |
-    |   31	|	 `msdyn_UnifiedRoutingForCS`	                | Required for unified routing in Customer Service		|
-    |	32	|	 `UnifiedRoutingPrimeAnchor`                    | Required for unified routing in Customer Service		|
-    |	33	|	 `msdyn_OmnichannelSBRPatch_managed`	        | Required for unified routing in Customer Service		|
-    |	34	|	 `OmnichannelSBR`                            	| Required for unified routing in Customer Service		|
-    |	35	|	 `OCBaseURBase`	                                | Required for unified routing in Customer Service		|
-    |	36	|	 `OmnichannelBase`	                            | Required for unified routing in Customer Service		|
-    |	37	|	 `MLDecisionEngine`	                            | Required for unified routing in Customer Service		|
-    |	38	|	 `UnifiedRouting`	                            | Required for unified routing in Customer Service		|
-    |	39	|	 `msdyn_UnifiedRoutingForEntity`	            | Required for unified routing in Customer Service		|
-    |	40	|	 `DecisionEngine`	                            | Required for unified routing in Customer Service		|
-    |	41	| `msdynce_AnyEntityRoutingRulePatch202001_managed`	| Required for unified routing in Customer Service		|
-    |	42	|	 `msdynce_AnyEntityRoutingRule`	                | Required for unified routing in Customer Service		|
-    |	43	|	 `ScenariosAndChannels`	                        |		|
-    |	44	|	 `msdyn_CIFrameworkPatch`	                    |		|
-    |	45	|	 `ChannelAPIIntegrationFramework`	            |		|
-    |	46	|	 `OmnichannelIntelligence` 	                    |		|
-    |	47	|	 `OmnichannelConfiguration`                    	|		| 
-    |	48	|	 `msdyn_MacrosDataOmnichannel`	                |		|
-    ||||
+    |	30  |   `OmnichannelTelephony`                          | You must delete all the related workstreams before you delete OmnichannelTelephony |
+    |	31	|	 `ScenariosAndChannels`	                        |		|
+    |	32	|	 `msdyn_CIFrameworkPatch`	                    |		|
+    |	33	|	 `ChannelAPIIntegrationFramework`	            |		|
+    |	34	|	 `OmnichannelIntelligence` 	                    |		|
+    |	35	|	 `OmnichannelConfiguration`                    	|		| 
+    |	36	|	 `msdyn_MacrosDataOmnichannel`	                |		|
+
 
 5. A confirmation message appears that prompts you to uninstall the managed solution. Select **OK**.
 
@@ -89,7 +72,7 @@ When you uninstall Omnichannel for Customer Service from your organization, the 
 
 **To remove the solutions for Omnichannel historical analytics**
 
-1. Disable Omnichannel historical analytics in the Insights section of Omnichannel admin center. More information: [Configure Omnichannel historical analytics reports](/oc-historical-analytics-reports.md)
+1. Disable Omnichannel historical analytics in the Insights section of Omnichannel admin center. More information: [Configure Omnichannel historical analytics reports](/dynamics365/customer-service/oc-historical-analytics-reports)
 
 2. On the **Solutions** page, select and uninstall the following solutions, one at a time, in this order:
    1. `msdyn_InsightsAnalyticsOCConfiguration`

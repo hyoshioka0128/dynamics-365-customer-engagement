@@ -5,7 +5,6 @@ ms.date: 03/11/2022
 ms.topic: article
 author: udaykirang
 ms.author: udag
-manager: shujoshi
 ---
 # Explore the sales accelerator with sample data 
 
@@ -26,7 +25,7 @@ You can add sample data any time you need, during or after the configuration of 
 > [!NOTE]
 > - The sample data adds basic Dynamics 365 Sales and Sales Premium record types. More information: [Record types updated with sample data](#record-types-updated-with-sample-data)     
 > - To prevent unwanted results, sample data is available only in non-production environments.  
-> - You can also add sample data from the quick setup panel (with the Dynamics 365 Sales Enterprise license). More information: [Set up sales accelerator](digital-selling.md#set-up-sales-accelerator)
+> - You can also add sample data from the quick setup panel (with the Dynamics 365 Sales Enterprise license). More information: [Set up sales accelerator](digital-selling-sales-accelerator.md#set-up-sales-accelerator)
 
 1. Sign in to your sales app, and in the lower-left corner of the page, go to **Change area** > **Sales Insights settings**.
 2. Under **Sales accelerator**, select **Workspace**.    

@@ -8,18 +8,16 @@ ms.custom:
 ms.topic: article
 author: cabeln
 ms.author: cabeln
-manager: shellyha
 ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Email marketing analytics report for Dynamics 365 Marketing
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 This marketing analytics report provides insights into your email marketing and related activities. Use the following links to download a template for running the report on your organization and an example report filled with sample data.
 

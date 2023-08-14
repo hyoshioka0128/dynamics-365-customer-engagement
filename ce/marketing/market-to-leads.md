@@ -7,17 +7,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Market to leads with Dynamics 365 Marketing
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Marketing uses contact records to represent prospective customers and enables marketers to engage with those contacts through initiatives such as customer journeys, events, and landing pages. When a contact submits a landing page, Marketing typically auto-creates a lead for that contact, and marketers can manually add leads for contacts at any time. Dynamics 365 Marketing then nurtures and scores those leads through a qualification process, and hands off marketing-qualified leads to salespeople for further qualification into opportunities. In this way, Marketing uses contacts to represent *people* and leads to represent *specific expressions of interest* made by those people. You can read more about this process in [Manage customer information](manage-customer-information.md) and [The lead lifecycle](lead-lifecycle.md).
 
@@ -103,6 +101,5 @@ In the current version of Dynamics 365 Marketing, the techniques described here 
 - A built-in feature that creates and associates contacts when you import large numbers of leads at once.
 
 Going forward, we will continue to gather market feedback to identify solutions for business scenarios that still are not supported by this marketing model.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: "Overview of channels in Omnichannel for Customer Service | MicrosoftDocs"
-description: "This topic provides information about different channels that are available in Omnichannel for Customer Service."
+description: "Learn about the different channels that are available in Omnichannel for Customer Service."
 author: neeranelli
 ms.author: nenellim
-manager: shujoshi
 ms.topic: overview
-ms.date: 04/13/2022
-
+ms.date: 05/05/2023
 ---
 
 # Overview of channels
@@ -46,9 +44,10 @@ If you want to help your customers using SMS, you can use the following SMS chan
 
 If you want to help your customers using social media, you can use the following social channels:
 
+- [Apple Messages for Business](configure-apple-messages-for-business-channel.md)
 - [Facebook](configure-facebook-channel.md)
+- [Google's Business Messages](configure-google-business-messages-channel.md)
 - [WhatsApp through Twilio](configure-whatsapp-channel.md)
-- [Twitter](configure-twitter-channel.md)
 - [WeChat](configure-wechat-channel.md)
 - [LINE](configure-line-channel.md)
 

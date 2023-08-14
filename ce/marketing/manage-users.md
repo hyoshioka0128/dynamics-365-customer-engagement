@@ -9,17 +9,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # View and edit basic user information in Dynamics 365 Marketing
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 The Dynamics 365 Marketing application provides an overview of users licensed to use the app and lets you view and edit basic information about them.
 

@@ -9,17 +9,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Fix a high email bounce rate
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 If you receive a notification that a past campaigns’ bounce rate surpassed the acceptable bounce limit, your email campaign requires some special attention.
 
@@ -52,3 +50,5 @@ From a deliverability perspective, sending emails regularly to approximately the
 And finally, always monitor your delivery results. Check your bounce rates and engagement rates (opens and clicks) regularly so that you do not miss any potential slow growth of bounces across your campaigns. Monitoring these rates will allow you to prevent damage to your sending reputation and keep your contacts data up to date.
 
 Bounce rate is a key indicator of your contact list health. There will always be a few bounces in every campaign. It is expected and normal. But preventing a large number of bounces is key to maintaining your sender reputation and is achievable with consistent monitoring.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

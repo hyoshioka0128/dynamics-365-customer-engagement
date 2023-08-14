@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Organize your daily work
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 You can use common features of Dynamics 365 to organize your daily work, including using dashboards to get an overview of your most important information, planning and recording activities (such as appointments, tasks, and phone calls), creating new records quickly, and assigning records (including activities) to a user or a team.
 
@@ -135,6 +133,5 @@ If you would like another person in your organization to handle a particular acc
 
 [Generate activities from a customer journey](generate-activities-from-customer-journey.md)  
 [The event management dashboard](event-management-dashboard.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,24 +1,23 @@
 ---
-title: "Social media posting with Dynamics 365 Marketing (Dynamics 365 Marketing) | Microsoft Docs"
-description: "Create social media posts for immediate or scheduled publishing in Dynamics 365 Marketing."
-ms.date: 12/09/2020
-
-ms.custom: 
-  - dyn365-marketing
+title: Social media posting with Dynamics 365 Marketing
+description: Create social media posts for immediate or scheduled publishing in Dynamics 365 Marketing.
+ms.date: 08/01/2023
+ms.service: dynamics-365-marketing
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Schedule and post messages on social media
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> Due to recent changes to Twitter's APIs, social posts to Twitter are temporarily unavailable in Dynamics 365 Marketing.
 
 <div class="embeddedvideo"><iframe src="https://www.microsoft.com/videoplayer/embed/RE4J4cQ" frameborder="0" allowfullscreen=""></iframe></div>
 
@@ -65,5 +64,8 @@ To schedule and publish a message to one of your social-media channels:
 You can edit, reschedule, or cancel any post that hasn't been sent yet. Just find and select it on the calendar to open the record, and then edit the settings or select **Delete** on the command bar as needed.
 
 Posts that were already sent are read-only, so you can't change or reschedule them, but you can remove them from the calendar or delete if you want. When you delete a post that has already been sent, it will be removed from the calendar and from the social-media sites.
+
+> [!NOTE]
+> Posts that were made to the Instagram channel cannot be removed by the Marketing app; Instagram does not provide this functionality. To remove the post from Instagram, go to Instagram and manually remove it. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

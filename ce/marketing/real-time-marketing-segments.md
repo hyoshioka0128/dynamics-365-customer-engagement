@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Work with segments in real-time marketing
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 Real-time marketing uses [segments](segmentation-lists-subscriptions.md) directly from outbound marketing and [Customer Insights](/dynamics365/customer-insights/index). You can view the segments available to you in real-time marketing by going to **Audience** > **Segments**.
 
@@ -86,3 +84,5 @@ To use a suppression segment, select **Exit criteria** in the right-side pane in
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of suppression segment selection.](media/real-time-marketing-suppression.png "Screenshot of suppression segment selection")
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

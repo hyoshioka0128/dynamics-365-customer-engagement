@@ -1,4 +1,4 @@
-- name: Docs
+- name: Learn
   href: /
   topicHref: /
   items:
@@ -33,14 +33,7 @@
       topicHref: /dynamics365/sales/index
     - name: Customer Service
       tocHref: /dynamics365/customer-service/
-      topicHref: /dynamics365/customer-service/overview
-      items:
-      - name: Channel Integration Framework
-        tocHref: /dynamics365/developer/channel-integration-framework/
-        topicHref: /dynamics365/developer/channel-integration-framework/channel-integration-framework
-      - name: Channel Integration Framework
-        tocHref: /dynamics365/customer-service/channel-integration-framework/
-        topicHref: /dynamics365/customer-service/channel-integration-framework/channel-integration-framework       
+      topicHref: /dynamics365/customer-service/index
     - name: Universal Resource Scheduling
       tocHref: /dynamics365/common-scheduler/
       topicHref: /dynamics365/common-scheduler/schedule-anything-with-universal-resource-scheduling
@@ -62,9 +55,6 @@
     - name: Versium Predict
       tocHref: /dynamics365/versium-predict
       topicHref: /dynamics365/versium-predict/versium-predict
-    - name: Gamification
-      tocHref: /dynamics365/gamification
-      topicHref: /dynamics365/gamification/increase-employee-productivity-with-dynamics-365-gamification
     - name: Voice of the Customer
       tocHref: /dynamics365/voice-of-customer
       topicHref: /dynamics365/voice-of-customer/create-voice-of-customer-survey

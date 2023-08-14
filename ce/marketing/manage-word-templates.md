@@ -2,24 +2,21 @@
 title: "Create and deploy Word templates (Dynamics 365 Marketing) | Microsoft Docs"
 description: "Create Word templates that you can use to export, format, and share detailed data from single records in Dynamics 365 Marketing."
 ms.date: 10/25/2021
-
 ms.custom: 
   - dyn365-admin
   - dyn365-marketing
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Manage Word templates
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 Microsoft Word provides powerful ways to present your Dynamics 365 data in a standardized and well-formatted document. With Word templates, you can easily create and share your template with others, so all the documents that go out to your customers have a consistent look that matches your organization's branding.
 
@@ -149,7 +146,6 @@ An administrator can use the **Settings** page to upload the Word template into 
 ### See also
 
 [Export data to Word or Excel docs](export-data-word-excel.md)  
-[Business management settings](business-management-settings.md)
-
+[Data management settings](data-management-settings.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

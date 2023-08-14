@@ -1,11 +1,11 @@
 ---
-title: "Set up product bundles to sell multiple items| MicrosoftDocs"
-description: "Encourage customers to buy more products instead of a single product by combining products in a bundle."
+title: Set up product bundles to sell multiple items
+description: Encourage customers to buy more products instead of a single product by combining products in a bundle.
 ms.date: 10/26/2021
-ms.topic: get-started-article
+ms.topic: how-to
 author: lavanyakr01
 ms.author: lavanyakr
-manager: shujoshi
+ms.custom: bap-template
 searchScope: 
   - D365-App-msdynce_saleshub
   - D365-Entity-product
@@ -35,8 +35,8 @@ A bundle is a collection of products that is sold as single unit. Product bundli
 
 Here are some things to know about bundles:  
   
-- You can mark certain products in a bundle as optional and sell them individually.  
-  
+- You can mark certain products in a bundle as optional and sell them individually. 
+- When your bundle has an optional product, the bundle can be added only to the price list that has this optional product with the same unit.
 - You can't add product families, kits, or other bundles to a bundle.  
 
 ## Create a product bundle (Sales Hub)
@@ -117,7 +117,7 @@ If you've added this bundle to a family, the bundle will inherit the properties 
 [!INCLUDE [cant-find-option](../includes/cant-find-option.md)]
 
 ### See also  
-[How prices are calculated for product bundles?](pricing-product-bundles.md)
+[How prices are calculated for product bundles?](pricing-product-bundles.md)  
 [Set up a product catalog: Walkthrough](set-up-product-catalog-walkthrough.md)   
 [System Settings dialog box - Sales tab](/power-platform/admin/system-settings-dialog-box-sales-tab)
 

@@ -8,15 +8,13 @@ ms.custom:
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - developer
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Metadata reference for your organization
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 Your Dynamics 365 Marketing instance (organization) contains a collection of solutions that provide business functionality for marketing features. A solution provides a framework for packaging, installing, and uninstalling *components* that provide specific business functionality. Some examples of a solution component are entities, apps, business rules, charts, dashboards, and so on. For information about all the solution components, see [Solution components](/powerapps/maker/common-data-service/solutions-overview#components).
 

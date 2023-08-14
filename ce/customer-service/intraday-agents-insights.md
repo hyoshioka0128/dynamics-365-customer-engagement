@@ -1,18 +1,20 @@
 ---
 title: "Omnichannel Intraday insights: Agents insights report for supervisors | MicrosoftDocs"
 description: "Learn about the Intraday dashboards: Agents insights report for supervisors in Omnichannel for Customer Service."
-ms.date: 11/25/2021
+ms.date: 07/10/2023
 ms.topic: article
 author: neeranelli
 ms.author: nenellim
-manager: shujoshi
 feedback_product_url: https //experience.dynamics.com/ideas/categories/list/?category=a7f4a807-de3b-eb11-a813-000d3a579c38&forum=b68e50a6-88d9-e811-a96b-000d3a1be7ad
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 
 # View and understand the Agents insights report in Omnichannel intraday insights
 
 [!INCLUDE[cc-use-with-omnichannel](../includes/cc-use-with-omnichannel.md)]
+
+> [!NOTE]
+> Intraday insights reports for Omnichannel for Customer Service are deprecated as of May 1, 2023. We recommend that you use [real-time analytics reports](enable-realtime-analytics-dashboard-administrator.md), our latest analytics capability, which provide real-time information about the health and key performance indicators of your organization. For more information on the deprecation, go to [Intraday insights for Omnichannel for customer service are deprecated](deprecations-customer-service.md#intraday-insights-reports-in-omnichannel-for-customer-service-are-deprecated).
 
 ## Introduction
 
@@ -79,6 +81,11 @@ You can use the filters pane on the right to see only the signed-in agents in th
 2. Select the filter pane, and set **IsLoggedIn** field to **True**.
     >![Set filters to view signed-in agents.](media/filters-signed-in.png "Set filters to view signed-in agents")
 
+To get agent capacity information and monitor it, use the following entities to create a custom report or customize an existing report according to your business requirements.
+
+- The [agent status](./developer/reference/entities/msdyn_agentstatus.md) entity for the latest capacity profile and presence status of an agent. 
+- The [status history](./developer/reference/entities/msdyn_agentcapacityupdatehistory.md) entity for the history or audit trail of the presence and capacity profile changes for an agent.
+
 ### Agent details
 
 You can also view details about a specific agent by right-clicking the agent's name and then selecting **Drill through** > **Agent details** on the shortcut menu, as shown in the following image.
@@ -136,5 +143,6 @@ You can select the **Status** field to modify the presence indicator for an agen
 [Intraday insights dashboard](intraday-insights-dashboard.md)  
 [View and understand conversation insights](intraday-conversation-insights.md)  
 [View and understand Ongoing Conversations dashboard](ongoing-conversations-dashboard.md)  
+[Seller details page for sales managers](../sales/conversation-intelligence-seller-details.md#seller-details-page-for-sales-managers)  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

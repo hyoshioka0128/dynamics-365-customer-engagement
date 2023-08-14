@@ -1,24 +1,21 @@
 ---
 title: "Use natural language in real-time marketing journeys (Dynamics 365 Marketing) | Microsoft Docs"
 description: "Learn how to use natural language in real-time marketing journeys in Dynamics 365 Marketing."
-ms.date: 12/06/2021
-
+ms.date: 12/07/2022
 ms.custom: 
   - dyn365-marketing
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Preview: Use natural language in real-time marketing journeys
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
@@ -47,7 +44,7 @@ The following are examples of simple conditional phrases using natural language:
 **Search by company**
 
 - Customers who work at Microsoft (Profile)
-- People who work in a company named Amazon (Profile/Contact)
+- People who work in a company named Contoso (Profile/Contact)
 
 **Search by demographic**
 
@@ -75,3 +72,5 @@ To provide feedback after you've entered a natural language clause:
 1. Select the **thumbs down** icon.
 1. Select **Send feedback**.
 1. Enter a short explanation of what happened. Add comments about what you would expect the phrase to look like.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

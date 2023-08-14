@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Set up double opt-in on a per-form basis
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 Instead of enabling [global double opt-in](double-opt-in.md), you can choose to require double opt-in on a form by form basis. Form double opt-in allows customers to select multiple subscription lists and opt-in through a single confirmation email. Form double opt-in results in many benefits:
 

@@ -8,15 +8,13 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - developer
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Publish custom channel on AppSource
+
+[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
 
 Once you have your custom code (plug-in or workflow), tile, and custom entities/forms tested and ready for the custom channel, you can publish it on [Microsoft AppSource](https://appsource.microsoft.com) from where users can download and install it in their Dynamics 365 Marketing instance. 
 
@@ -25,7 +23,6 @@ To do so, add all the components for the custom channel in a solution, and then 
 ## See also
 
 [Video: Microsoft AppSource: find the right app for your business](https://youtu.be/hpq_Y9LuIB8)
-
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

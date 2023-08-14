@@ -8,17 +8,15 @@ ms.custom:
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Transfer data and configurations between environments using the Configuration Migration tool
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 You can replicate Dynamics 365 Marketing configurations and data across environments using the standard tools provided for Dynamics 365. Common scenarios where this comes in handy include:
 

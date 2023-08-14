@@ -1,11 +1,12 @@
 ---
-title: "Configure work classification rulesets | MicrosoftDocs"
-description: "Learn about how to configure work classification rulesets for unified routing."
-ms.date: 05/02/2022
-ms.topic: article
+title: Configure work classification rulesets
+description: Learn how to configure work classification rulesets for unified routing.
+ms.date: 04/26/2023
+ms.topic: how-to
 author: neeranelli
 ms.author: nenellim
-manager: shujoshi
+ms.reviewer: shujoshi
+ms.custom: bap-template
 searchScope:
 - D365-App-customerservicehub
 - D365-Entity-queueitem
@@ -15,12 +16,6 @@ searchScope:
 - Customer Service
 ---
 # Configure work classification rulesets for unified routing
-
-## Introduction
-
-Use the CSR Manager or Omnichannel administrator role to configure the work classification rules for a workstream.
-
-You will do the tasks listed in this article in the Omnichannel admin center or Customer Service Hub app.
 
 In unified routing, work classification lets you define rules to add detailed information to incoming work items that can be used to route and assign the work items optimally.
 
@@ -43,13 +38,17 @@ In work classification rulesets, the values set in one of the rule items of a ru
 
 For a rule item, you can set the output values for up to five attributes.
 
+## Prerequisite
+
+You need the CSR Manager or Omnichannel administrator role to configure the work classification rules for a workstream.
+
 ## Create work classification rulesets
 
 Logical classification rules are run to update work item attributes. They are written in the format of "if defined condition satisfies, then set the output attributes to certain values." You can create conditions to define rules based on multiple entity attributes. Routing rules are written as rulesets that consist of rule items.
 
 To create a logical work classification ruleset, do the following steps:
 
-1. In Customer Service admin center, Omnichannel admin center, or Customer Service Hub, select a workstream, and in the **Routing rules** area, for the **Work classification (optional)** option, select **Create Ruleset**.
+1. In Customer Service admin center or Omnichannel admin center (deprecated), select a workstream, and in the **Routing rules** area, for the **Work classification (optional)** option, select **Create Ruleset**.
 
 2. On the **Work classification** page, select **Create new**, and in the **Create work classification ruleset** dialog, select **Logical rules** in **Rule type**, and enter a name and description. By default, the root record is selected and displayed at the top of the condition builder for ease of reference and visibility of the record for which you are creating the rule.
 
@@ -90,7 +89,8 @@ Follow these steps to create a logical skill classification ruleset:
 7. If you want to set up the skill attribute, in the **Conditions** area, define the conditions, and select the required value in the **Output** area for the skill that needs to be set.
 
    > [!Note]
-   > Ensure that the rating model that you choose for a skill in the work classification rule is same as the rating model that's defined for the skill attached to the agent. Also, ensure that you don't attach the same skill with two different rating models.
+   > - Ensure that the rating model that you choose for a skill in the work classification rule is same as the rating model that's defined for the skill attached to the agent. Also, ensure that you don't attach the same skill with two different rating models.
+   > - When you reroute a work item, new skills are appended to the existing ones if any.
 
 ## Create classification rulesets based on capacity profiles
 
@@ -98,8 +98,7 @@ Create work classification rulesets that are based on capacity profiles to route
 
 1. Perform the steps 1 through 5 in [Create logical skill classification rulesets](#create-logical-skill-classification-rulesets).
 2. In the **Output** area, select **Capacity profile**, and choose a capacity profile whose value should be set if the conditions are met.
-
-   > ![Capacity profile-based work classification rule.](media/capacity-profile-based-rule.png "Capacity profile-based work classification rule.")
+   :::image type="content" source="media/capacity-profile-based-rule.png" alt-text="Capacity profile-based work classification rule.":::
 
 ## Create machine learning-based skill classification rulesets
 
@@ -138,33 +137,11 @@ You can create rules that are based on the sentiment prediction model to classif
 
 You can create rules that are based on the effort estimation model to classify work items. More information: [Use effort estimation](use-effort-estimation-for-routing.md).
 
-## Configure route-to-queues rulesets and rules
-
-Queue routing rules send the work item to the right queue. They are written in the format of, "If defined condition satisfies, then route the work item to the defined queue." They are optional, and if no rules are defined or no rules match, then the incoming work item will be routed to the fallback queue of the respective workstream. For a workstream, the route-to-queue ruleset is run after all of the work classification rulesets are run. A workstream can have only one route-to-queues ruleset.
-
-After you configure the route-to-queues rulesets and rules, during runtime, to assign a work item to a queue, the system matches the rule conditions and operating hours of the corresponding queue. If more than one rule matches the required condition and the corresponding queues also match the operating hours, then, the queue corresponding to the first rule in the list is selected for assignment. If none of the queues corresponding to the rules meet the operating hours, the work item is assigned to the queue that will be operational at the earliest.
-
-When no rule condition is matched or no rule is defined, the work item is assigned to the default queue.
-
-1. In Customer Service admin center, Omnichannel admin center, or Customer Service Hub, select a workstream, and in the **Routing rules** section, select **Create ruleset** next to **Route to queues**, and then select **Create Rule** in **Decision list**.
-
-2. In the **Create route to queue rule** dialog, enter a name in **Rule Name**. By default, the root record is selected and displayed at the top of the condition builder.
-
-3. In **Conditions**, define the set of conditions. If you are creating rules for records, then the top-level condition is automatically populated. You can define conditions for up to two levels of the related records and attributes.
-
-4. In **Route to queues**, select the queue to which the work items will be routed if the conditions are met.
-  
-   :::image type="content" source="media/ur-route-to-queue-decision.png" alt-text="Configure route to queue decision rules.":::
-
-5. Repeat steps 2 through 4 to define the rules to cater to your business needs.
-
-6. Optionally, after you create the required rules, you can reorder them in the ruleset by selecting the arrows in the **Order** column on the **Decision list** page.
-
 ## Options available for rulesets
 
 After you create the rules, you can change the order in which the rules should be evaluated, search for rules, and view the condition that's been used for each rule by hovering the mouse over the condition. You can also create copies of the rules and update only the necessary information to avoid writing the conditions from scratch. You can hover the mouse over a condition to view it without having to navigate to each condition.
 
-:::image type="content" source="media/route-to-queue-ruleset.png" alt-text="Route-to-queues rulesets list":::
+:::image type="content" source="media/work-classification-rules-list.png" alt-text=" Work classification rules list":::
 
 ### See also
 

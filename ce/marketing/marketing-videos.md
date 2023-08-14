@@ -9,17 +9,15 @@ ms.custom:
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365Mktg
 ---
 
 # Watch these videos to learn more about Dynamics 365 Marketing
+
+[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
 
 If you are new to Dynamics 365 Marketing, then these videos will help you gain a quick understanding of the system and how to work with some of its most-used features.
 

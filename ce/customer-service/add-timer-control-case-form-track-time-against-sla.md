@@ -1,18 +1,14 @@
 ---
 title: "Timer control for SLA-enabled entities | Microsoft Docs"
 description: "Learn how to add timer control in the case form to track time against a SLA in Dynamics 365 Customer Service."
-ms.date: 04/01/2022
+ms.date: 05/23/2023
 ms.topic: article
 author: Soumyasd27
 ms.author: sdas
-manager: shujoshi
 search.audienceType: 
   - admin
   - customizer
   - enduser
-search.app: 
-  - D365CE
-  - D365CS
 ms.custom: 
   - dyn365-customerservice
 ---
@@ -27,19 +23,25 @@ After you've configured the SLA KPIs, SLAs, and SLA items for an entity, you can
 
 For information on how the SLA KPIs are displayed at runtime when agents view the case to work on in Customer Service Hub, go to [Timer for SLA-enabled entities](customer-service-hub-user-guide-case-sla.md#timer-control-for-sla-enabled-entities).
 
+> [!NOTE]
+> - The SLA Timer control displays SLA KPIs that are created in Unified Interface only.
+> - The SLA Timer control displays  **No Applicable SLA** when there aren't any applicable SLAs.
+
 A sample runtime view of the SLA Timer is as follows.
 
 ![Runtime view of the SLA timers.](media/sla-timer-runtime.png "Runtime view of the SLA timers")
 
-> [!NOTE]
-> The SLA Timer control displays SLA KPIs that are created in Unified Interface only.
+However, SLA KPI Instances won't reach a **Nearing non-compliance** or **Non-complaint** state, if the **SLAWarningAndExpiryMonitoringFlow** isn't enabled and the SLA KPI Instance timer continues to run. The following warning message is displayed on the SLA Timers:
+"The SLA instances may be incorrect because workflow <*workflow ID*> is turned off. Please contact your admin to turn the workflow on." The workflow ID will vary from system to system as it corresponds to **SLAWarningAndExpiryMonitoringFlow**. For more information on how to enable **SLAWarningAndExpiryMonitoringFlow**, see [ Warning message appears on slakpiinstances](troubleshoot-sla-issues.md#warning-message-appears-on-slakpiinstances).
+
+For more information on why an SLA KPI Instance doesn't reach **Nearing Non-compliance** or **Non-compliant** state and how you can resolve it, see [SLA KPI Instance doesn't reach Nearing Non-compliance or Non-compliant state, and the SLA KPI Instance timer continues to run](troubleshoot-sla-issues.md#sla-kpi-instance-doesnt-reach-nearing-non-compliance-or-non-compliant-state-and-the-sla-kpi-instance-timer-continues-to-run).
 
 Do the following steps to add the SLA timer control for the case entity.
 
 > [!IMPORTANT]
 > You can add the SLA timer control only in the classic Power Apps experience.
 
-1. In your Dynamics 365 environment, select **Advanced Settings** to go to **Customizations**.
+1. In your Power Platform environment, select **Advanced Settings** to go to **Customizations**.
 2. Select **Customize the System**, and in the **Solutions** page, expand **Entities** under **Components**.
 3. Select the entity for which you want to add the SLA Timer control, and in the **Forms** view, select the corresponding form. In this example, let us select the Case entity, and the **Case for interactive experience** form.
 4. On the page that appears, on the **Insert** tab, insert a section, and then insert a subgrid.
@@ -129,9 +131,7 @@ After you've added the SLA timer control for a SLA-enabled entity, you can custo
 > [!NOTE]
 > The screens showcase the timer control on a Unified Interface app. On a legacy web client app, the timer control is displayed as follows: <br><br> ![Timer control in webclient app.](media/timer-control-webclient.png)
 
-
-More information: [Track SLA details with Timer Control](customer-service-hub-user-guide-case-sla.md#track-sla-details-with-timer-control)
-
+More information: [Understand SLA details with Timer control](customer-service-hub-user-guide-case-sla.md#understand-sla-details-with-timer-control)
 
 ### Add an out-of-the-box timer control  
   
@@ -191,8 +191,7 @@ More information: [Track SLA details with Timer Control](customer-service-hub-us
 
 [Add a timer in forms to track time against enhanced SLAs](add-timer-forms-track-time-against-enhanced-sla.md)
 
-[Track SLA details with Timer Control](customer-service-hub-user-guide-case-sla.md#track-sla-details-with-timer-control)
-
+[Understand SLA details with Timer control](customer-service-hub-user-guide-case-sla.md#understand-sla-details-with-timer-control)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
